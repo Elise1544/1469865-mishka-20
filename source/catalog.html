@@ -8,19 +8,18 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a href="index.html" class="page-header__logo">
-      <img src="https://via.placeholder.com/150x150" width="86" height="35">
+    <a href="index.html" class="page-header__logo logo">
+      <img class="logo__picture" src="https://via.placeholder.com/150x150" width="86" height="35">
     </a>
-    <button type="button" class="page-header__button button">Открыть меню навигации</button>
-    <nav class="main-nav">
+    <nav class="page-header__nav main-nav">
       <ul class="main-nav__list nav-list">
-        <li class="nav-list__item"><a href="catalog.html">Каталог товаров</a></li>
-        <li class="nav-list__item"><a href="form.html">Вязание на заказ</a></li>
-        <li class="nav-list__item"><a href="blank.html">Поиск по сайту</a></li>
-        <li class="nav-list__item"><a href="blank.html">Корзина: пока пуста</a></li>
+        <li class="nav-list__item"><a class="nav-list__link" href="catalog.html">Каталог товаров</a></li>
+        <li class="nav-list__item"><a class="nav-list__link" href="form.html">Вязание на заказ</a></li>
+        <li class="nav-list__item"><a class="nav-list__link" href="blank.html">Поиск по сайту</a></li>
+        <li class="nav-list__item"><a class="nav-list__link" href="blank.html">Корзина: пока пуста</a></li>
       </ul>
     </nav>
-    <button type="button" class="page-header__button button">Закрыть меню навигации</button>
+    <button type="button" class="page-header__button button">Меню навигации</button>
   </header>
   <main class="page-main">
     <h1 class="page-main__title">Каталог товаров</h1>
@@ -29,9 +28,9 @@
       <ul class="catalog__list">
         <li class="catalog__item">
           <article class="catalog__product product">
-            <a href="blank.html"><img class="product__picture" src="https://via.placeholder.com/150x150" width="260"
-                height="195"></a>
-            <a href="blank.html">
+            <a class="product__link" href="blank.html"><img class="product__picture"
+                src="https://via.placeholder.com/150x150" width="260" height="195"></a>
+            <a class="product__link" href="blank.html">
               <h3 class="product__title">Зайчик-попрыгайчик</h3>
             </a>
             <p class="product__description">Рост 30 см, вес 200 г</p>
@@ -41,9 +40,9 @@
         </li>
         <li class="catalog__item">
           <article class="catalog__product product">
-            <a href="blank.html"><img class="product__picture" src="https://via.placeholder.com/150x150" width="260"
-                height="195"></a>
-            <a href="blank.html">
+            <a class="product__link" href="blank.html"><img class="product__picture"
+                src="https://via.placeholder.com/150x150" width="260" height="195"></a>
+            <a class="product__link" href="blank.html">
               <h3 class="product__title">Корзинка для белья</h3>
             </a>
             <p class="product__description">Диаметр 15 см, высота 10 см</p>
@@ -53,9 +52,9 @@
         </li>
         <li class="catalog__item">
           <article class="catalog__product product">
-            <a href="blank.html"><img class="product__picture" src="https://via.placeholder.com/150x150" width="260"
-                height="195"></a>
-            <a href="blank.html">
+            <a class="product__link" href="blank.html"><img class="product__picture"
+                src="https://via.placeholder.com/150x150" width="260" height="195"></a>
+            <a class="product__link" href="blank.html">
               <h3 class="product__title">Большая корзинка для игрушек</h3>
             </a>
             <p class="product__description">Диаметр 30 см, высота 30 см</p>
@@ -67,25 +66,26 @@
     </section>
     <section class="page-main__production production">
       <h3 class="production__title">Процесс производства</h3>
-      <video class="production__video video" src="" width="260" height="150" controls></video>
-      <button class="video__button"><span class="visually-hidden">Запустить видео</span></button>
-      <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
-        как появляются наши товары.</p>
+      <div class="production__video video">
+        <video class="video__main" src="" width="260" height="150" controls></video>
+        <button class="video__button"><span class="visually-hidden">Запустить видео</span></button>
+        <p class="production__description">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том,
+          как появляются наши товары.</p>
+      </div>
       <button class="production__button button">Сделать заказ</button>
     </section>
   </main>
   <footer class="page-footer">
     <div class="page-footer__social social">
       <ul class="social__list">
-        <li class="social__item"><a href="https://www.instagram.com/?hl=ru">Instagram</a></li>
-        <li class="social__item"><a href="https://www.facebook.com/">Facebook</a></li>
-        <li class="social__item"><a href="https://twitter.com/explore">Twitter</a></li>
+        <li class="social__item"><a class="social__link" href="https://www.instagram.com/?hl=ru">Instagram</a></li>
+        <li class="social__item"><a class="social__link" href="https://www.facebook.com/">Facebook</a></li>
+        <li class="social__item"><a class="social__link" href="https://twitter.com/explore">Twitter</a></li>
       </ul>
     </div>
     <div class="page-footer__copyright copyright">
       <p class="copyright__title">Разработано</p>
-      <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__picture"><img
-          src="https://via.placeholder.com/150x150" width="27" height="34"></a>
+      <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" class="copyright__picture"><img class="copyright__picture" src="https://via.placeholder.com/150x150" width="27" height="34"></a>
     </div>
   </footer>
   <div class="modal">

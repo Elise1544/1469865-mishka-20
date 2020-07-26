@@ -1,0 +1,13 @@
+@import "../variables.scss";
+
+.full-name__title {
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $light-green;
+}
+
+.full-name__input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}

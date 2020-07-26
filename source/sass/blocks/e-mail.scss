@@ -1,0 +1,13 @@
+@import "../variables.scss";
+
+.e-mail__title {
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $light-green;
+}
+
+.e-mail__input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}

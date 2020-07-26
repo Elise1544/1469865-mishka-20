@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -13,7 +14,7 @@
     </a>
     <nav class="page-header__nav main-nav">
       <ul class="main-nav__list nav-list">
-        <li class="nav-list__item"><a class="nav-list__link" href="catalog.html">Каталог товаров</a></li>
+        <li class="nav-list__item"><a class="nav-list__link nav-list__link--active" href="catalog.html">Каталог товаров</a></li>
         <li class="nav-list__item"><a class="nav-list__link" href="form.html">Вязание на заказ</a></li>
         <li class="nav-list__item"><a class="nav-list__link" href="blank.html">Поиск по сайту</a></li>
         <li class="nav-list__item"><a class="nav-list__link" href="blank.html">Корзина: пока пуста</a></li>
@@ -22,7 +23,7 @@
     <button type="button" class="page-header__button button">Меню навигации</button>
   </header>
   <main class="page-main">
-    <h1 class="page-main__title">Каталог товаров</h1>
+    <h1 class="visually-hidden">Каталог товаров</h1>
     <section class="page-main__catalog catalog">
       <h3 class="visually-hidden">Список товаров</h3>
       <ul class="catalog__list">
@@ -42,7 +43,6 @@
           <article class="catalog__product product">
             <a class="product__link" href="blank.html"><img class="product__picture"
                 src="https://via.placeholder.com/150x150" width="260" height="195"></a>
-            <a class="product__link" href="blank.html">
               <h3 class="product__title">Корзинка для белья</h3>
             </a>
             <p class="product__description">Диаметр 15 см, высота 10 см</p>

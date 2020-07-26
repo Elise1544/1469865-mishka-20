@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Мишка</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body class="page__body">
@@ -14,7 +15,7 @@
     <nav class="page-header__nav main-nav">
       <ul class="main-nav__list nav-list">
         <li class="nav-list__item"><a class="nav-list__link" href="catalog.html">Каталог товаров</a></li>
-        <li class="nav-list__item"><a class="nav-list__link" href="form.html">Вязание на заказ</a></li>
+        <li class="nav-list__item"><a class="nav-list__link nav-list__link--active" href="form.html">Вязание на заказ</a></li>
         <li class="nav-list__item"><a class="nav-list__link" href="blank.html">Поиск по сайту</a></li>
         <li class="nav-list__item"><a class="nav-list__link" href="blank.html">Корзина: пока пуста</a></li>
       </ul>
@@ -22,9 +23,9 @@
     <button type="button" class="page-header__button button">Меню навигации</button>
   </header>
   <main class="page-main">
-    <h1 class="page-main__title">Вязание на заказ</h1>
+    <h1 class="visually-hidden">Вязание на заказ</h1>
     <section class="page-main__form form-section">
-      <p class="form-section__description">Мы будем рады воплотить в жизнь Ваши пожелания! Заполните простую форму
+      <p class="form-section__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
         заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form class="form" action="https://echo.htmlacademy.ru" method="GET">
         <div class="form__type type">
@@ -80,13 +81,13 @@
         <div class="form__e-mail e-mail">
           <h3 class="e-mail__title">e-mail</h3>
           <label class="e-mail__name">
-            <input type="email" name="email" placeholder="Ваш Email*" required>
+            <input class="e-mail__input" type="email" name="email" placeholder="Ваш Email*" required>
           </label>
         </div>
         <div class="form__additional additional">
           <h3 class="additional__title">Доп</h3>
           <label class="additional__name">
-            <textarea name="additional" id="" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea class="additional__input" name="additional" id="" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </label>
         </div>
         <p class="form__reminder">*Поля обязательны для заполнения</p>

@@ -1,0 +1,17 @@
+@import "../variables.scss";
+
+.product__title {
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.product__description {
+  font-size: 13px;
+  color: $grey;
+}
+
+.product__cost {
+  font-size: 15px;
+  line-height: 24px;
+  font-weight: 700;
+}

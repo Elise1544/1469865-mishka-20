@@ -1,0 +1,16 @@
+@import "../variables.scss";
+
+.address {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  color: $grey;
+}
+
+.address__name {
+  padding-right: 10px;
+}
+
+.address__value {
+  padding: 0 10px;
+}

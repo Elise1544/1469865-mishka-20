@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/opensans.woff2) format("woff2"), url(../fonts/opensans.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/opensansbold.woff2) format("woff2"), url(../fonts/opensansbold.woff) format("woff");
+}
+
+// цвета
+  $black: #000000;
+  $light-green: #63d1bb;
+  $white: #ffffff;
+  $grey: #444444;
+  $dark-green: #149080;
+  $dark-steel: #ececec;
+  $steel: #f1f1f1;
+  $dark-grey: #231f20;
+  $dark-aquamarine: #56c3b2;
+  $aquamarine: #62d1ba;
+  $light-aquamarine: #6bc6b3;
+  $light-steel: #f9f9f9;
+  $silver: #e5e5e5;

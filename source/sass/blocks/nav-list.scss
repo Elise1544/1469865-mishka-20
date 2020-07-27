@@ -1,0 +1,12 @@
+@import "../variables.scss";
+
+.nav-list__link--active {
+  font-size: 27px;
+  font-weight: 700;
+
+  background-color: $steel;
+}
+
+.nav-list__item {
+  padding: 10px;
+}

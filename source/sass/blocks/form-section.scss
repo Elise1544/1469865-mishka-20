@@ -1,0 +1,11 @@
+@import "../variables.scss";
+
+.form-section {
+  padding: 17px 17px 55px 29px;
+}
+
+.form-section__description {
+  font-size: 13px;
+  line-height: 24px;
+  color: $grey;
+}

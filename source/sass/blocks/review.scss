@@ -1,0 +1,22 @@
+.review__title {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+.review__text {
+  font-size: 15px;
+  color: $grey;
+}
+
+.review__author {
+  display: block;
+  line-height: 24px;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.review__username {
+  color: $grey;
+  display: block;
+}

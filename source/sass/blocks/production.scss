@@ -1,0 +1,12 @@
+@import "../variables.scss";
+
+.production__title {
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.production__description {
+  font-size: 13px;
+  line-height: 24px;
+  color: $grey;
+}

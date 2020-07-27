@@ -1,0 +1,13 @@
+@import "../variables.scss";
+
+.page__body {
+  margin: 0;
+
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 17px;
+  line-height: 30px;
+  font-weight: 400;
+
+  background-color: $white;
+  color: $black;
+}

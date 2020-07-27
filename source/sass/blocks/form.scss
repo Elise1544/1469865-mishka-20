@@ -1,0 +1,13 @@
+@import "../variables.scss";
+
+.form {
+  line-height: 18px;
+  font-weight: 700;
+}
+
+.form__reminder {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: $grey;
+}

@@ -1,0 +1,28 @@
+@import "../variables.scss";
+
+.hit {
+  padding: 30px;
+}
+
+.hit__title {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+}
+
+.hit__time {
+  line-height: 20px;
+  font-weight: 700;
+  color: $light-green;
+}
+
+.hit__description {
+  font-size: 15px;
+  line-height: 24px;
+  color: $grey;
+}
+
+.hit__picture {
+  width: 260px;
+  height: 315px;
+}

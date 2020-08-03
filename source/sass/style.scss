@@ -5,6 +5,7 @@
 @import "../sass/blocks/button.scss";
 @import "../sass/blocks/catalog.scss";
 @import "../sass/blocks/color.scss";
+@import "../sass/blocks/communication.scss";
 @import "../sass/blocks/contacts.scss";
 @import "../sass/blocks/copyright.scss";
 @import "../sass/blocks/description.scss";
@@ -28,6 +29,7 @@
 @import "../sass/blocks/production.scss";
 @import "../sass/blocks/review.scss";
 @import "../sass/blocks/social.scss";
+@import "../sass/blocks/subjects.scss";
 @import "../sass/blocks/table.scss";
 @import "../sass/blocks/type.scss";
 @import "../sass/blocks/video.scss";
@@ -44,13 +46,9 @@ a {
   color: inherit;
 }
 
-ul {
-  padding: 0;
-  list-style: none;
-}
-
 img {
   max-width: 100%;
+  height: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),

@@ -2,4 +2,19 @@
 
 .page-footer {
   background-color: $steel;
+
+  @media (min-width: $tablet-width) {
+  display: flex;
+  justify-content: space-around;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-footer__logo {
+    display: none;
+  }
+
+  .page-footer {
+    text-align: center;
+  }
 }

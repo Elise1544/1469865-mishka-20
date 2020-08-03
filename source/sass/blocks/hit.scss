@@ -2,27 +2,156 @@
 
 .hit {
   padding: 30px;
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1, 2;
+    gap: 42px;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2;
+    gap: 58px;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
+}
+
+.hit br {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 }
 
 .hit__title {
+  margin: 0;
   font-weight: 700;
-  font-size: 27px;
+  font-size: 25px;
   line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1-2;
+
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2;
+    grid-row: 2;
+
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .hit__time {
+  margin: 0;
   line-height: 20px;
   font-weight: 700;
+  text-transform: uppercase;
   color: $light-green;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2;
+
+    font-size: 17px;
+    line-height: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1;
+    grid-row: 2/6;
+    font-size: 17px;
+    line-height: 17px;
+    text-align: end;
+  }
 }
 
 .hit__description {
   font-size: 15px;
   line-height: 24px;
   color: $grey;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2;
+    grid-row: 3;
+  }
+}
+
+.hit__specifications {
+  margin-top: 18px;
+  margin-bottom: 41px;
+  color: $grey;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 3;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2;
+    grid-row: 4;
+  }
 }
 
 .hit__picture {
   width: 260px;
   height: 315px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 2/6;
+    grid-column: 2;
+
+    width: 333px;
+    height: 404px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 1/7;
+    grid-column: 3;
+
+    width: 525px;
+    height: 636px;
+  }
+}
+
+.hit__cost {
+  line-height: 24px;
+  font-weight: 700;
+  text-align: center;
+
+  color: $grey;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 4;
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2;
+    grid-row: 5;
+  }
+}
+
+.hit__button {
+
+  @media (min-width: $tablet-width) {
+    grid-row: 5;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2;
+    grid-row: 6;
+  }
 }

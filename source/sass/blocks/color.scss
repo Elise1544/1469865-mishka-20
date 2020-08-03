@@ -1,7 +1,49 @@
 @import "../variables.scss";
 
+.color {
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+
+    background-color: $steel;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 225px 0 97px;
+  }
+}
+
 .color__title {
   line-height: 16px;
   text-transform: uppercase;
   color: $light-green;
+
+  @media (min-width: $tablet-width) {
+    width: 23%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 12.5%;
+  }
+}
+
+.color__name {
+  display: block;
+  line-height: 18px;
+  font-weight: 700;
+  margin: 0 50px 30px 0;
+  margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+  }
+}
+
+.color__wrap {
+  @media (min-width: $tablet-width) {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

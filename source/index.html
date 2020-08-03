@@ -26,15 +26,16 @@
   <main class="page-main">
     <h1 class="visually-hidden">Магазин предметов интерьера ручной работы</h1>
     <section class="main-information">
-      <h2 class="main-information__title">Милые штуки ручной работы для дома</h2>
-      <div class="main-information__type"><a class="main-information__link" href="blank.html">Предметы интерьера</a>
+      <h2 class="main-information__title">Милые штуки ручной <br>работы для дома</h2>
+      <div class="main-information__type subjects">
+        <div class="subjects__interior"><a class="subjects__link" href="blank.html">Предметы <br>интерьера</a>
+        </div>
+        <div class="subjects__toys"><a class="subjects__link" href="blank.html">Детские <br>игрушки</a></div>
       </div>
-      <div class="main-information__type main-information__type--dark"><a class="main-information__link"
-          href="blank.html">Детские игрушки</a></div>
     </section>
     <section class="hit">
       <h3 class="hit__title">Вязаные корзинки</h3>
-      <p class="hit__time">Товар недели</p>
+      <p class="hit__time">Товар <br>недели</p>
       <p class="hit__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
         размерах.</p>
       <table class="hit__specifications table">
@@ -56,7 +57,7 @@
       <button class="hit__button button" type="submit">Заказать</button>
     </section>
     <section class="about">
-      <h3 class="about__title">Коротко о нас</h3>
+      <h3 class="about__title">Коротко о нас:</h3>
       <div class="about__description description">
         <ul class="description__list">
           <li class="description__item">Экологически чистые материалы</li>
@@ -74,20 +75,26 @@
           стали более стильными, а так же набирают больше лайков!</p>
         <cite class="review__author">Анастасия Красильникова</cite>
         <cite class="review__username">@misssssiskras</cite>
-        <button class="review__button button" type="button">Назад</button>
-        <button class="review__button button" type="button">Вперед</button>
+        <div class="review__button">
+          <button class="review__button--back button" type="button">Назад</button>
+          <button class="review__button--forward button" type="button">Вперед</button>
+        </div>
         <a class="review__add button" href="blank.html"><button class="review__write-us button"
             type="submit">Написать</button></a>
       </div>
     </section>
     <section class="contacts">
       <h3 class="contacts__title">Контакты</h3>
-      <div class="contacts__description address">
-        <p class="address__name">e-mail:</p>
-        <p class="address__value"><a class="address__link"
-            href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
-        <p class="address__name">Адрес:</p>
-        <p class="address__value">г. Санкт-Петербург, <br> ул. Большая <br>Конюшенная, <br>д.19/8, офис 101</p>
+      <div class="contacts__description communication">
+        <div class="communication__wrap">
+          <p class="communication__name">e-mail:</p>
+          <p class="communication__value"><a class="contacts-email__link"
+              href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
+        </div>
+        <div class="communication__wrap">
+          <p class="communication__name">адрес:</p>
+          <p class="communication__value">г. Санкт-Петербург, <br>ул. Большая Конюшенная, <br>д.19/8, офис 101</p>
+        </div>
       </div>
       <div class="contacts__map map">
         <img class="map__picture" src="https://via.placeholder.com/150x150" width="322" height="457">
@@ -97,6 +104,9 @@
     </section>
   </main>
   <footer class="page-footer">
+    <a class="page-footer__logo logo">
+      <img class="logo__picture" src="https://via.placeholder.com/150x150" width="86" height="35">
+    </a>
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item"><a class="social__link" href="https://www.instagram.com/?hl=ru">Instagram</a></li>

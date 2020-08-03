@@ -2,10 +2,24 @@
 
 .form-section {
   padding: 17px 17px 55px 29px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
 }
 
 .form-section__description {
   font-size: 13px;
   line-height: 24px;
   color: $grey;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 225px;
+  }
 }

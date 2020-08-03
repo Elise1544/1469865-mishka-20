@@ -1,6 +1,28 @@
+@import "../variables.scss";
+
 .page-header {
+  display: flex;
+  flex-direction: column;
   padding: 10px;
 
   font-weight: 700;
   line-height: 24px;
+}
+
+.page-header__logo {
+  height: 35px;
+
+  @media (min-width: $tablet-width) {
+    height: 46px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 72px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .page-header__button {
+    display: none;
+  }
 }

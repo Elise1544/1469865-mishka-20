@@ -1,7 +1,7 @@
-@import "../variables.scss";
-
-.nav-list {
-  // display: none;
+.user-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
   text-align: center;
 
   @media (min-width: $tablet-width) {
@@ -11,6 +11,6 @@
   }
 }
 
-.nav-list__item {
+.user-list__item {
   padding: 10px;
 }

@@ -10,22 +10,37 @@
 
 <body class="page__body">
   <header class="page-header">
-    <a href="index.html" class="page-header__logo logo">
-      <img class="logo__picture" src="https://via.placeholder.com/150x150" width="86" height="35">
-    </a>
+    <div class="page-header__logo logo">
+      <a class="logo__link">
+        <img class="logo__picture" src="https://via.placeholder.com/150x150" width="86" height="35">
+      </a>
+    </div>
     <nav class="page-header__nav main-nav">
       <ul class="main-nav__list nav-list">
-        <li class="nav-list__item"><a class="nav-list__link" href="catalog.html">Каталог товаров</a></li>
-        <li class="nav-list__item"><a class="nav-list__link nav-list__link--active" href="form.html">Вязание на
-            заказ</a></li>
-        <li class="nav-list__item"><a class="nav-list__link" href="blank.html">Поиск по сайту</a></li>
-        <li class="nav-list__item"><a class="nav-list__link" href="blank.html">Корзина: пока пуста</a></li>
+        <li class="nav-list__item nav-list__item--catalog"><a class="nav-list__link" href="catalog.html">Каталог
+            товаров</a></li>
+        <li class="nav-list__item nav-list__item--booking"><a class="nav-list__link nav-list__link--active"
+            href="form.html">Вязание на заказ</a></li>
       </ul>
     </nav>
+    <div class="page-header__wrap">
+      <p class="page-header__income">Новые поступления</p>
+      <p class="page-header__sales">Распродажа</p>
+    </div>
+    <p class="page-header__info">Бесплатная доставка по России</p>
+    <div class="page-header__user">
+      <ul class="page-header__user user-list">
+        <li class="user-list__item nav-list__item--search"><a class="user-list__link" href="blank.html">Поиск по
+            сайту</a>
+        </li>
+        <li class="user-list__item nav-list__item--cart"><a class="user-list__link" href="blank.html">Корзина: пока
+            пуста</a></li>
+      </ul>
+    </div>
     <button type="button" class="page-header__button button">Меню навигации</button>
   </header>
   <main class="page-main">
-    <h1 class="visually-hidden">Вязание на заказ</h1>
+    <h1 class="page-main__name">Вязание на заказ</h1>
     <section class="page-main__form form-section">
       <p class="form-section__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму
         заказа и мы свяжемся с вами, чтобы уточнить детали.</p>

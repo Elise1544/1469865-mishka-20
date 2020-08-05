@@ -1,12 +1,36 @@
 @import "../variables.scss";
 
+.additional {
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 225px 0 97px;
+  }
+}
+
 .additional__title {
   line-height: 16px;
   text-transform: uppercase;
   color: $light-green;
+
+  @media (min-width: $tablet-width) {
+    width: 30%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 14.5%;
+  }
+}
+
+.additional__name {
+  width: 100%;
 }
 
 .additional__input {
+  width: 100%;
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;

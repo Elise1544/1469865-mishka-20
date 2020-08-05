@@ -5,9 +5,25 @@
   font-weight: 700;
 }
 
+.form__order {
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 225px;
+  }
+}
+
 .form__reminder {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
   color: $grey;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
 }

@@ -1,7 +1,44 @@
 @import "../variables.scss";
 
+.type {
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 225px 0 97px;
+  }
+}
+
 .type__title {
   line-height: 16px;
   text-transform: uppercase;
   color: $light-green;
+
+  @media (min-width: $tablet-width) {
+    width: 23%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 12.5%;
+  }
+}
+
+.type__name {
+  display: block;
+  margin-bottom: 30px;
+  line-height: 18px;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+  font-size: 19px;
+  }
+}
+
+.type__wrap {
+  @media (min-width: $tablet-width) {
+    width: 70%;
+  }
 }

@@ -1,0 +1,38 @@
+.subjects {
+  display: flex;
+
+  @media (max-width: $mobile-width-only) {
+  display: block;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 0 30px;
+  }
+}
+
+.subjects__interior,
+.subjects__toys {
+  padding: 10px 30px;
+  display: flex;
+  align-items: center;
+  min-height: 103px;
+  width: 50%;
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+  }
+}
+
+.subjects__interior {
+  background-color: $light-green;
+}
+
+.subjects__toys {
+  background-color: $dark-aquamarine;
+}
+
+.subjects__link {
+  display: block;
+  // height: 100%;
+}
+

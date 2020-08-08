@@ -6,8 +6,12 @@
     display: flex;
   }
 
+  @media (min-width: $tablet-width) {
+    padding: 50px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding: 0 225px 0 97px;
+    padding: 50px 225px 50px 97px;
   }
 }
 
@@ -15,13 +19,29 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $light-green;
+  position: relative;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     width: 30%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 14.5%;
+    width: 18%;
+  }
+}
+
+.additional__title::after {
+  content: "";
+  position: absolute;
+  width: 198px;
+  height: 1px;
+  top: 50%;
+  left: 63px;
+  background-color: $aquamarine;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
@@ -31,6 +51,9 @@
 
 .additional__input {
   width: 100%;
+  padding: 17px;
+  border: 2px solid $grey;
+
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;

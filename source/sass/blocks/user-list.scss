@@ -1,8 +1,8 @@
 .user-list {
+  // display: none;
   margin: 0;
   padding: 0;
   list-style: none;
-  text-align: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -12,5 +12,29 @@
 }
 
 .user-list__item {
+  display: flex;
+  align-items: center;
   padding: 10px;
+  min-height: 79px;
+
+  box-shadow: 0px 1px 0px $dark-steel, inset 0px 1px 0px $dark-steel;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: none;
+  }
+}
+
+.user-list__link {
+  display: block;
+  margin-left: 76px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.user-list__item--cart {
+  @media (min-width: $tablet-width) {
+    padding-right: 0;;
+  }
 }

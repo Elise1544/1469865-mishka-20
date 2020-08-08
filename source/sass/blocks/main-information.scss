@@ -1,19 +1,28 @@
 @import "../variables.scss";
 
 .main-information {
+  min-height: 489px;
+
   background-color: $light-steel;
 
+  @media (min-width: $tablet-width) {
+    min-height: 746px;
+    margin-top: -80px;
+  }
 }
 
 .main-information__title {
+  margin: 0;
   min-height: 283px;
   padding: 30px;
+  padding-top: 45px;
   margin-bottom: 0;
 
   font-size: 27px;
   line-height: 30px;
   font-weight: 700;
   text-align: center;
+  vertical-align: middle;
 
   background-image: url(../../img/hero-mobile@1x.jpg);
   background-repeat: no-repeat;
@@ -22,6 +31,11 @@
   @media (min-width: $tablet-width) {
     font-size: 43px;
     line-height: 50px;
+    padding-top: 155px;
+    background-image: url(../../img/hero-tablet@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    min-height: 627px;
   }
 
   @media (min-width: $desktop-width) {
@@ -35,4 +49,5 @@
   line-height: 24px;
   font-weight: 700;
   color: $white;
+  margin-top: auto;
 }

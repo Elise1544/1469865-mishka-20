@@ -3,8 +3,12 @@
 .about {
   padding: 0 30px;
 
+  @media (min-width: $tablet-width) {
+    padding: 0;
+  }
+
   @media (min-width: $desktop-width) {
-    padding-left: 176px;
+    margin-bottom: 161px;
   }
 }
 
@@ -16,10 +20,12 @@
   @media (min-width: $tablet-width) {
   font-size: 43px;
   line-height: 50px;
+  padding: 0 50px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 53px;
     line-height: 57px;
+    padding-left: 175px;
   }
 }

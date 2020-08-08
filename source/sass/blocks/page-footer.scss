@@ -1,11 +1,17 @@
 @import "../variables.scss";
 
 .page-footer {
+  margin-top: 58px;
+  min-height: 160px;
   background-color: $steel;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
 
   @media (min-width: $tablet-width) {
-  display: flex;
-  justify-content: space-around;
+    flex-direction: row;
+    min-height: 143px;
   }
 }
 

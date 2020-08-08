@@ -11,6 +11,8 @@
 }
 
 .contacts__title {
+  margin-top: 89px;
+
   font-size: 18px;
   font-weight: 700;
   grid-column: 1;
@@ -21,9 +23,11 @@
   }
 
   @media (min-width: $desktop-width) {
+    grid-row: 2;
+    margin: 0;
+
     font-size: 53px;
     line-height: 57px;
-    grid-row: 2;
   }
 }
 
@@ -38,6 +42,20 @@
 }
 
 .contacts__link {
+  display: block;
+  text-align: center;
+  margin: 39px 0;
+  padding: 0 30px;
+
   grid-column: 1;
   grid-row: 5;
+}
+
+.contacts__write-us {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    min-width: 230px;
+    width: auto;
+  }
 }

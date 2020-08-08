@@ -9,8 +9,12 @@
     background-color: $steel;
   }
 
+  @media (min-width: $tablet-width) {
+    padding: 50px;
+  }
+
   @media (min-width: $desktop-width) {
-    padding: 0 225px 0 97px;
+    padding: 50px 225px 20px 97px;
   }
 }
 
@@ -18,13 +22,29 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $light-green;
+  position: relative;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
     width: 23%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 12.5%;
+    width: 15%;
+  }
+}
+
+.color__title::after {
+  content: "";
+  position: absolute;
+  width: 198px;
+  height: 1px;
+  top: 50%;
+  left: 63px;
+  background-color: $aquamarine;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 

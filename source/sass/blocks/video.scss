@@ -1,4 +1,18 @@
+.video {
+  position: relative;
+}
+
 .video__main {
   width: 100%;
   height: auto;
+  display: block;
+}
+
+.video__button {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 77px;
+  top: calc(50% - 38px);
+  left: calc(50% - 50px);
 }

@@ -11,31 +11,32 @@
 <body class="page__body">
   <header class="page-header">
     <a class="page-header__logo logo" href="index.html">
-      <img class="logo__picture" src="https://via.placeholder.com/150x150" width="86" height="35">
+      <img class="logo__picture" src="img/logo-mobile.svg" width="86" height="35">
     </a>
     <nav class="page-header__nav main-nav">
       <ul class="main-nav__list nav-list">
         <li class="nav-list__item nav-list__item--catalog"><a class="nav-list__link" href="catalog.html">Каталог
             товаров</a></li>
-        <li class="nav-list__item nav-list__item--booking"><a class="nav-list__link nav-list__link--active" href="form.html">Вязание на
+        <li class="nav-list__item nav-list__item--booking"><a class="nav-list__link" href="form.html">Вязание на
             заказ</a></li>
       </ul>
     </nav>
+    <div class="page-header__user">
+      <ul class="page-header__user user-list">
+        <li class="user-list__item user-list__item--search"><a class="user-list__link" href="blank.html">Поиск по
+            сайту</a>
+        </li>
+        <li class="user-list__item user-list__item--cart"><a class="user-list__link" href="blank.html">Корзина: пока
+            пуста</a></li>
+      </ul>
+    </div>
     <ul class="page-header__wrap">
       <li class="page-header__income"><a class="page-header__link" href="blank.html">Новые поступления</a></li>
       <li class="page-header__sales"><a class="page-header__link" href="blank.html">Распродажа</a></li>
     </ul>
     <p class="page-header__info">Бесплатная доставка по России</p>
-    <div class="page-header__user">
-      <ul class="page-header__user user-list">
-        <li class="user-list__item nav-list__item--search"><a class="user-list__link" href="blank.html">Поиск по
-            сайту</a>
-        </li>
-        <li class="user-list__item nav-list__item--cart"><a class="user-list__link" href="blank.html">Корзина: пока
-            пуста</a></li>
-      </ul>
-    </div>
-    <button type="button" class="page-header__button button">Меню навигации</button>
+    <button type="button" class="page-header__button page-header--closed button"><span class="visually-hidden">Меню
+        навигации</span></button>
   </header>
   <main class="page-main">
     <h1 class="page-main__name">Вязание на заказ</h1>
@@ -47,11 +48,11 @@
           <h3 class="type__title">Тип</h3>
           <div class="type__wrap">
             <label class="type__name">
-              <input class="type__input" type="radio" name="type" value="interior" checked disabled>Аксессуар для
+              <input class="type__input radio" type="radio" name="type" value="interior" checked disabled>Аксессуар для
               интерьера
             </label>
             <label class="type__name">
-              <input class="type__input" type="radio" name="type" value="toy">Детская игрушка
+              <input class="type__input radio" type="radio" name="type" value="toy">Детская игрушка
             </label>
           </div>
         </div>
@@ -120,6 +121,9 @@
     </section>
   </main>
   <footer class="page-footer">
+    <a class="page-footer__logo logo">
+      <img class="logo__picture" src="img/logo-footer.svg" width="86" height="35">
+    </a>
     <div class="page-footer__social social">
       <ul class="social__list">
         <li class="social__item"><a class="social__link" href="https://www.instagram.com/?hl=ru">Instagram</a></li>

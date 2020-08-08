@@ -1,5 +1,24 @@
-@import "../variables.scss";
-
 .page-footer {
+  margin-top: 58px;
+  min-height: 160px;
   background-color: $steel;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    min-height: 143px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .page-footer__logo {
+    display: none;
+  }
+
+  .page-footer {
+    text-align: center;
+  }
 }

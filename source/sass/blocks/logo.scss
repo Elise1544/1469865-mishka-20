@@ -1,0 +1,14 @@
+.logo {
+  height: 35px;
+  display: block;
+}
+
+.logo__picture {
+  display: block;
+  margin: auto;
+  height: 100%;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}

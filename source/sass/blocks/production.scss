@@ -1,4 +1,16 @@
-@import "../variables.scss";
+.production {
+  border: 1px solid $dark-steel;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    column-gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 70% 30%;
+    // grid-template-rows: min-content 1fr min-content;
+  }
+}
 
 .production__title {
   line-height: 24px;
@@ -6,7 +18,37 @@
 }
 
 .production__description {
+  padding-left: 34px;
+
   font-size: 13px;
   line-height: 24px;
   color: $grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2;
+  }
+}
+
+.production__button {
+  display: block;
+  margin: 33px auto 33px auto;
+
+  min-width: 192px;
+
+  @media (min-width: $tablet-width) {
+    margin: 40px 42px 46px 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2;
+    grid-row: 3;
+    width: fit-content;
+    height: fit-content;
+    min-width: 230px;
+  }
 }

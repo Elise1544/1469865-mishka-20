@@ -1,13 +1,74 @@
-@import "../variables.scss";
+.full-name {
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 50px 225px 40px 97px;
+  }
+}
 
 .full-name__title {
   line-height: 16px;
   text-transform: uppercase;
   color: $light-green;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 23%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 15%;
+  }
+}
+
+.full-name__title::after {
+  content: "";
+  position: absolute;
+  width: 198px;
+  height: 1px;
+  top: 50%;
+  left: 63px;
+  background-color: $aquamarine;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.full-name__name {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+
+  line-height: 18px;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+    font-size: 19px;
+  }
 }
 
 .full-name__input {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 30px;
+    display: inline-block;
+    width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
+  }
 }

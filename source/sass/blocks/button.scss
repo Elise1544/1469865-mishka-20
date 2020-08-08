@@ -1,11 +1,13 @@
-@import "../variables.scss";
-
 .button {
   text-align: center;
+  min-height: 52px;
 
   font-size: 18px;
   line-height: 20px;
   font-weight: 700;
+  text-transform: uppercase;
+  font-family: inherit;
 
   color: $grey;
+  background-color: inherit;
 }

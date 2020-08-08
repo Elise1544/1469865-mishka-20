@@ -1,7 +1,59 @@
-@import "../variables.scss";
+.type {
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 225px 30px 97px;
+  }
+}
 
 .type__title {
+  position: relative;
+
   line-height: 16px;
   text-transform: uppercase;
   color: $light-green;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 23%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 15%;
+  }
+}
+
+.type__title::after {
+  content: "";
+  position: absolute;
+  width: 198px;
+  height: 1px;
+  top: 50%;
+  left: 63px;
+  background-color: $aquamarine;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.type__name {
+  display: block;
+  margin-bottom: 30px;
+  line-height: 18px;
+  font-weight: 700;
+
+  @media (min-width: $tablet-width) {
+  font-size: 19px;
+  }
+}
+
+.type__wrap {
+  @media (min-width: $tablet-width) {
+    width: 70%;
+  }
 }

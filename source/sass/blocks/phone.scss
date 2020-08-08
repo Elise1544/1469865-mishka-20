@@ -1,9 +1,53 @@
-@import "../variables.scss";
+.phone {
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    display: flex;
+
+    background-color: $steel;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding: 50px;
+    padding-bottom: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 66px 225px 20px 97px;
+  }
+}
 
 .phone__title {
   line-height: 16px;
   text-transform: uppercase;
   color: $light-green;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 30%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 18%;
+  }
+}
+
+.phone__title::after {
+  content: "";
+  position: absolute;
+  width: 198px;
+  height: 1px;
+  top: 50%;
+  left: 63px;
+  background-color: $aquamarine;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.phone__name {
+  width: 100%;
 }
 
 .phone__input {

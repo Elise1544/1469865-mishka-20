@@ -1,3 +1,13 @@
+.description {
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 175px;
+  }
+}
+
 .description__list {
   line-height: 20px;
   font-weight: 700;

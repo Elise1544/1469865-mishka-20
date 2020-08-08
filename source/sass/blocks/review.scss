@@ -48,6 +48,19 @@
   }
 }
 
+<<<<<<< HEAD
+=======
+.review__author {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+
+  @media (min-width: $tablet-width) {
+    grid-row: 3;
+  }
+}
+
+>>>>>>> d2f4f50... Добавила контентные изображения
 .review__name {
   line-height: 24px;
   font-weight: 700;

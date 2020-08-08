@@ -2,6 +2,19 @@
   @media (min-width: $tablet-width) {
     padding: 0 50px;
   }
+<<<<<<< HEAD
+=======
+
+  @media (min-width: $desktop-width) {
+    padding-left: 175px;
+  }
+}
+
+.description__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+>>>>>>> d2f4f50... Добавила контентные изображения
 
   @media (min-width: $desktop-width) {
     padding-left: 175px;

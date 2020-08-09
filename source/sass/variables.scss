@@ -12,6 +12,11 @@
   src: url(../fonts/opensansbold.woff2) format("woff2"), url(../fonts/opensansbold.woff) format("woff");
 }
 
+// размеры
+$mobile-width-only: 320px;
+$tablet-width: 768px;
+$desktop-width: 1150px;
+
 // цвета
   $black: #000000;
   $light-green: #63d1bb;

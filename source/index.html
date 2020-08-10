@@ -15,8 +15,10 @@
     </a>
     <nav class="page-header__nav main-nav">
       <ul class="main-nav__list nav-list">
-        <li class="nav-list__item"><a class="nav-list__link" href="catalog.html">Каталог товаров</a></li>
-        <li class="nav-list__item"><a class="nav-list__link" href="form.html">Вязание на заказ</a></li>
+        <li class="nav-list__item nav-list__item--catalog"><a class="nav-list__link" href="catalog.html">Каталог
+            товаров</a></li>
+        <li class="nav-list__item nav-list__item--booking"><a class="nav-list__link" href="form.html">Вязание на
+            заказ</a></li>
       </ul>
     </nav>
     <div class="page-header__user">
@@ -33,35 +35,36 @@
       <li class="page-header__sales"><a class="page-header__link" href="blank.html">Распродажа</a></li>
     </ul>
     <p class="page-header__info">Бесплатная доставка по России</p>
-    <button type="button" class="page-header__button page-header--closed button"><span class="visually-hidden">Меню
+    <button type="button" class="page-header__button page-header--opened button"><span class="visually-hidden">Меню
         навигации</span></button>
   </header>
   <main class="page-main">
     <h1 class="visually-hidden">Магазин предметов интерьера ручной работы</h1>
     <section class="main-information">
-      <h2 class="main-information__title">Милые штуки ручной работы для дома</h2>
-      <div class="main-information__type"><a class="main-information__link" href="blank.html">Предметы интерьера</a>
+      <h2 class="main-information__title">Милые штуки ручной<br>работы для дома</h2>
+      <div class="main-information__type subjects">
+        <div class="subjects__interior"><a class="subjects__link" href="blank.html">Предметы <br>интерьера</a>
+        </div>
+        <div class="subjects__toys"><a class="subjects__link" href="blank.html">Детские <br>игрушки</a></div>
       </div>
-      <div class="main-information__type main-information__type--dark"><a class="main-information__link"
-          href="blank.html">Детские игрушки</a></div>
     </section>
     <section class="hit">
       <h3 class="hit__title">Вязаные корзинки</h3>
-      <p class="hit__time">Товар недели</p>
+      <p class="hit__time">Товар <br>недели</p>
       <p class="hit__description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех
         размерах.</p>
       <table class="hit__specifications table">
         <tr class="table__row">
           <td class="table__data">Цвет:</td>
-          <td class="table__data">"Тиффани"/серый</td>
+          <td class="table__value">&#171Тиффани&#187/серый</td>
         </tr>
         <tr class="table__row">
           <td class="table__data">Диаметр:</td>
-          <td class="table__data">25 см</td>
+          <td class="table__value">25 см</td>
         </tr>
         <tr class="table__row">
           <td class="table__data">Высота:</td>
-          <td class="table__data">15 см</td>
+          <td class="table__value">15 см</td>
         </tr>
       </table>
       <img class="hit__picture" src="img/triple-set-mobile@1x.jpg" width="260" height="315">
@@ -69,12 +72,12 @@
       <button class="hit__button button" type="submit">Заказать</button>
     </section>
     <section class="about">
-      <h3 class="about__title">Коротко о нас</h3>
+      <h3 class="about__title">Коротко о нас:</h3>
       <div class="about__description description">
         <ul class="description__list">
-          <li class="description__item">Экологически чистые материалы</li>
-          <li class="description__item">Скандинавский стиль по российской цене</li>
-          <li class="description__item">Увеличивает лайки на фотографиях</li>
+          <li class="description__item">Экологически<br>чистые материалы</li>
+          <li class="description__item">Скандинавский стиль<br>по российской цене</li>
+          <li class="description__item">Увеличивает лайки<br>на фотографиях</li>
           <li class="description__item">Связано вручную с любовью и умилением</li>
           <li class="description__item">Поддержка отечественного производителя</li>
           <li class="description__item">Поставляется в подарочной упаковке</li>
@@ -99,12 +102,16 @@
     </section>
     <section class="contacts">
       <h3 class="contacts__title">Контакты</h3>
-      <div class="contacts__description address">
-        <p class="address__name">e-mail:</p>
-        <p class="address__value"><a class="address__link"
-            href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
-        <p class="address__name">Адрес:</p>
-        <p class="address__value">г. Санкт-Петербург, <br> ул. Большая <br>Конюшенная, <br>д.19/8, офис 101</p>
+      <div class="contacts__description communication">
+        <div class="communication__wrap">
+          <p class="communication__name">e-mail:</p>
+          <p class="communication__value"><a class="contacts-email__link"
+              href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a></p>
+        </div>
+        <div class="communication__wrap">
+          <p class="communication__name">адрес:</p>
+          <p class="communication__value">г. Санкт-Петербург, <br>ул. Большая Конюшенная, <br>д.19/8, офис 101</p>
+        </div>
       </div>
       <div class="contacts__map map">
         <img class="map__picture" src="img/map-mobile@1x.jpg" width="322" height="457">
@@ -115,7 +122,7 @@
   </main>
   <footer class="page-footer">
     <a class="page-footer__logo logo">
-      <img class="logo__picture" src="img/logo-footer.svg" width="86" height="35">
+      <img class="logo__picture" src="img/logo-footer.svg" width="102" height="35">
     </a>
     <div class="page-footer__social social">
       <ul class="social__list">
@@ -132,13 +139,13 @@
   </footer>
   <div class="modal">
     <h3 class="modal__title">Добавить в корзину</h3>
-    <p class="modal__choice">Выберите размер</p>
+    <p class="modal__choice">Выберите размер:</p>
     <ul class="modal__list">
-      <li class="modal__item">S</li>
-      <li class="modal__item">M</li>
-      <li class="modal__item">L</li>
+      <li class="modal__item"><button class="modal__button modal__button--active button" type="button">S</button></li>
+      <li class="modal__item"><button class="modal__button button" type="button">M</button></li>
+      <li class="modal__item"><button class="modal__button button" type="button">L</button></li>
     </ul>
-    <button class="modal__button button" type="submit">Добавить</button>
+    <button class="modal__add button" type="submit">Добавить</button>
   </div>
 </body>
 

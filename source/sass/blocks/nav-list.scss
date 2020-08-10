@@ -1,7 +1,11 @@
 .nav-list {
   // display: none;
 
-  background-color: $steel;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
 }
 
 .nav-list__item {
@@ -14,13 +18,18 @@
 
   @media (min-width: $tablet-width) {
     box-shadow: none;
+    font-size: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 17px;
   }
 }
 
 .nav-list__link {
   display: block;
   height: 100%;
-  margin-left: 76px;
+  margin-left: 66px;
   vertical-align: middle;
 
   @media (min-width: $tablet-width) {
@@ -31,9 +40,10 @@
 .nav-list__item--catalog {
   @media (min-width: $tablet-width) {
     padding-left: 0;
+    margin-right: 15px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 45px;
+    margin-right: 50px;
   }
 }

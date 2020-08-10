@@ -13,8 +13,10 @@
   background-color: $steel;
 
   @media (min-width: $tablet-width) {
-    margin-top: -80px;
+    margin-top: -75px;
     min-height: 226px;
+    padding-top: 25px;
+    margin-bottom: 80px;
 
     font-size: 43px;
     line-height: 50px;
@@ -22,17 +24,30 @@
 
   @media (min-width: $desktop-width) {
     min-height: 255px;
+    margin-top: -70px;
+    margin-bottom: 45px;
+    padding-top: 10px;
 
     font-size: 53px;
     line-height: 57px;
   }
 }
 
+.page-main__name--form {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 65px;
+  }
+}
+
 .page-main__catalog {
-  margin-top: 67px;
+  margin-top: 30px;
   padding: 0 30px;
 }
 
 .page-main__production {
   margin: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 50px;
+  }
 }

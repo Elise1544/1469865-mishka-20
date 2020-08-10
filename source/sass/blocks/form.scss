@@ -3,19 +3,26 @@
   font-weight: 700;
 }
 
+.form__order {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 225px;
+  }
+}
+
 .form__reminder {
   font-size: 14px;
   line-height: 16px;
   font-weight: 400;
   color: $grey;
-}
-
-.form__button {
-  width: 100%;
 
   @media (min-width: $tablet-width) {
-    width: fit-content;
-    min-width: 230px;
+    order: 1;
   }
 }
 

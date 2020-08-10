@@ -2,9 +2,14 @@
   list-style: none;
   padding: 0;
 
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+  }
+
   @media (min-width: $desktop-width) {
     display: flex;
     justify-content: space-between;
+    margin: 0;
   }
 }
 

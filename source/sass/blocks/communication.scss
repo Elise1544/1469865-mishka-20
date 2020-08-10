@@ -1,0 +1,38 @@
+.communication {
+  font-size: 15px;
+  color: $grey;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    font-size: 17px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.communication__wrap {
+  display: flex;
+
+  @media (min-width: $tablet-width) and (max-width: $tablet-width) {
+    width: 50%;
+  }
+}
+
+.communication__name,
+.communication__value {
+  display: inline-block;
+}
+
+.communication__name {
+  padding-right: 16px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 10px;
+  }
+}
+
+.communication__value {
+  padding-left: 15px;
+}

@@ -1,12 +1,22 @@
 .main-information {
+  background-color: $light-steel;
+
+
+  @media (min-width: $tablet-width) {
+    margin-top: -75px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -70px;
+  }
+}
+
+.main-information--wrapper {
   min-height: 489px;
   margin-bottom: 8px;
 
-  background-color: $light-steel;
-
   @media (min-width: $tablet-width) {
     min-height: 746px;
-    margin-top: -75px;
   }
 }
 

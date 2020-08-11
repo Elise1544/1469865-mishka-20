@@ -1,11 +1,11 @@
 .description {
   @media (min-width: $tablet-width) {
     padding: 0 50px;
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-left: 225px;
+    padding: 0 225px;
     margin-bottom: 35px;
   }
 }
@@ -40,3 +40,38 @@
   }
 }
 
+.description__item--first {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
+.description__item--second {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}
+
+.description__item--third {
+  @media (min-width: $tablet-width) {
+    order: 5;
+  }
+}
+
+.description__item--fourth {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.description__item--fifth {
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
+}
+
+.description__item--sixth {
+  @media (min-width: $tablet-width) {
+    order: 6;
+  }
+}

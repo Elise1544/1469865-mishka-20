@@ -35,6 +35,11 @@
 @import "../sass/blocks/video.scss";
 @import "../sass/variables.scss";
 
+.wrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 *,
 *::before,
 *::after {

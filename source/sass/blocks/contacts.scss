@@ -1,7 +1,12 @@
-.contacts {
+.contacts--wrapper {
+  @media (min-width: $tablet-width) {
+    margin-bottom: 7px;
+  }
+
   @media (min-width: $desktop-width) {
     display: grid;
     padding-left: 175px;
+    margin-bottom: 55px;
   }
 }
 
@@ -30,7 +35,7 @@
   @media (min-width: $desktop-width) {
     grid-row: 2;
     margin: 0;
-    margin-top: 40px;
+    margin-top: 110px;
     margin-bottom: 15px;
 
     font-size: 53px;
@@ -55,6 +60,10 @@
   @media (min-width: $tablet-width) {
     margin-top: 30px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 25px;
+  }
 }
 
 .contacts__link {
@@ -67,7 +76,7 @@
   grid-row: 5;
 
   @media (min-width: $desktop-width) {
-    margin: 34px 80px 45px 0;
+    margin: 53px 80px 45px 10px;;
     padding: 0;
   }
 }

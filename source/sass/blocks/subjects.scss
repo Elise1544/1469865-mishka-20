@@ -13,6 +13,9 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 50px;
+
+    font-size: 20px;
+    line-height: 30px;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,14 +26,15 @@
 
 .subjects__interior,
 .subjects__toys {
-  padding: 10px 35px;
+  padding: 5px 30px;
   display: flex;
   align-items: center;
   min-height: 103px;
-  width: 50%;
+  width: 100%;
 
-  @media (max-width: $mobile-width-only) {
-    width: 100%;
+  @media (min-width: $tablet-width) {
+    width: 50%;
+    padding: 10px 37px;
   }
 
   @media (min-width: $desktop-width) {

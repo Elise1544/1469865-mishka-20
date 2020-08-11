@@ -42,12 +42,18 @@
 .page-main__catalog {
   margin-top: 30px;
   padding: 0 30px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+  }
 }
 
 .page-main__production {
   margin: 0 30px;
+  margin-bottom: 60px;
 
   @media (min-width: $tablet-width) {
     margin: 0 50px;
+    margin-bottom: 0;
   }
 }

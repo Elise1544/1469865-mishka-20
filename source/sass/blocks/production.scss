@@ -1,5 +1,19 @@
 .production {
   margin-top: 35px;
+  margin-bottom: 55px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 25px;
+    margin-bottom: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 105px;
+  }
+}
+
+.production--wrapper {
+  margin-top: 35px;
   border: 1px solid $dark-steel;
 
   @media (min-width: $tablet-width) {
@@ -9,8 +23,6 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 65% 35%;
-    margin-top: 25px;
-    margin-bottom: 105px;
   }
 }
 

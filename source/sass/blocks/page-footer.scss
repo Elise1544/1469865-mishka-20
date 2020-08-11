@@ -1,16 +1,22 @@
 .page-footer {
-  padding: 0 69px;
-  margin-top: 60px;
-  min-height: 160px;
+  margin-top: 39px;
+
   background-color: $steel;
+}
+
+.page-footer--wrapper {
+  padding: 0 69px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
+  min-height: 160px;
 
   @media (min-width: $tablet-width) {
+    margin-top: 50px;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    padding: 0 50px;
     min-height: 143px;
   }
 }

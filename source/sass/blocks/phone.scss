@@ -1,34 +1,42 @@
 .phone {
-  @media (min-width: $tablet-width) {
-    padding: 0 50px;
-    display: flex;
+  margin-top: 35px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 30px;
     background-color: $steel;
   }
+}
 
+.phone--wrapper {
   @media (min-width: $tablet-width) {
     padding: 50px;
     padding-bottom: 0;
+    display: flex;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 66px 225px 20px 97px;
+    padding: 50px 225px 12px 112px;
   }
 }
 
 .phone__title {
+  font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
+
   color: $light-green;
   position: relative;
 
+  margin-bottom: 3px;
+
   @media (min-width: $tablet-width) {
     margin: 0;
+    margin-top: 15px;
     width: 30%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 18%;
+    width: 14%;
   }
 }
 
@@ -48,11 +56,27 @@
 
 .phone__name {
   width: 100%;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 15px;
+  }
 }
 
 .phone__input {
   width: 100%;
+
   font-family: inherit;
-  font-size: inherit;
+  font-size: 19px;
   line-height: inherit;
+
+  min-height: 52px;
+  border: none;
+  box-shadow: inset 0px -2px 0px $black;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 15px;
+
+    background-color: inherit;
+  }
 }

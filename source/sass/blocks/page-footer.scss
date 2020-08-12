@@ -5,7 +5,7 @@
 }
 
 .page-footer--wrapper {
-  padding: 0 69px;
+  padding: 0 68px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -20,9 +20,9 @@
     min-height: 143px;
   }
 
-  @media (min-width: $max-width) {
-    padding: 0;
-  }
+  // @media (min-width: $max-width) {
+  //   padding: 0;
+  // }
 }
 
 @media (max-width: $mobile-width-only) {

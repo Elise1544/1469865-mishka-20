@@ -9,9 +9,9 @@
     margin-bottom: 55px;
   }
 
-  @media (min-width: $max-width) {
-    padding: 0;
-  }
+  // @media (min-width: $max-width) {
+  //   padding: 0;
+  // }
 }
 
 .contacts__description,
@@ -46,9 +46,9 @@
     line-height: 57px;
   }
 
-  @media (min-width: $max-width) {
-    padding-left: 225px;
-  }
+  // @media (min-width: $max-width) {
+  //   padding-left: 225px;
+  // }
 }
 
 .contacts__description {
@@ -73,10 +73,10 @@
     padding-right: 25px;
   }
 
-  @media (min-width: $max-width) {
-    padding: 0;
-    text-align: end;
-  }
+  // @media (min-width: $max-width) {
+  //   padding: 0;
+  //   text-align: end;
+  // }
 }
 
 .contacts__link {

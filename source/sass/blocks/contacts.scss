@@ -8,6 +8,10 @@
     padding-left: 175px;
     margin-bottom: 55px;
   }
+
+  @media (min-width: $max-width) {
+    padding: 0;
+  }
 }
 
 .contacts__description,
@@ -41,6 +45,10 @@
     font-size: 53px;
     line-height: 57px;
   }
+
+  @media (min-width: $max-width) {
+    padding-left: 225px;
+  }
 }
 
 .contacts__description {
@@ -63,6 +71,11 @@
 
   @media (min-width: $desktop-width) {
     padding-right: 25px;
+  }
+
+  @media (min-width: $max-width) {
+    padding: 0;
+    text-align: end;
   }
 }
 

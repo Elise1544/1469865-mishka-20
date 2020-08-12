@@ -19,6 +19,10 @@
     padding: 0 50px;
     min-height: 143px;
   }
+
+  @media (min-width: $max-width) {
+    padding: 0;
+  }
 }
 
 @media (max-width: $mobile-width-only) {

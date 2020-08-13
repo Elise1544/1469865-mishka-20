@@ -1,13 +1,15 @@
 .main-information {
   background-color: $light-steel;
+  border-top: 1px solid $black-active;
 
 
   @media (min-width: $tablet-width) {
-    margin-top: -75px;
+    margin-top: -80px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: -70px;
+    margin-bottom: 56px;
   }
 }
 
@@ -22,7 +24,7 @@
 
 .main-information__title {
   margin: 0;
-  min-height: 283px;
+  min-height: 281px;
   padding: 30px;
   padding-top: 73px;
   margin-bottom: 0;
@@ -39,6 +41,7 @@
 
   @media (min-width: $tablet-width) {
     padding-top: 155px;
+    padding-left: 25px;
     min-height: 627px;
 
     font-size: 43px;
@@ -50,7 +53,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 159px;
+    padding-top: 156px;
+    padding-left: 30px;
 
     font-size: 53px;
     line-height: 57px;

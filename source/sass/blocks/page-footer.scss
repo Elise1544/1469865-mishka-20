@@ -1,20 +1,33 @@
-@import "../variables.scss";
-
 .page-footer {
+  margin-top: 39px;
+
   background-color: $steel;
+}
+
+.page-footer--wrapper {
+  padding: 0 68px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  min-height: 160px;
 
   @media (min-width: $tablet-width) {
-  display: flex;
-  justify-content: space-around;
+    margin-top: 50px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    min-height: 143px;
   }
+
+  // @media (min-width: $max-width) {
+  //   padding: 0;
+  // }
 }
 
 @media (max-width: $mobile-width-only) {
   .page-footer__logo {
     display: none;
   }
-
-  .page-footer {
-    text-align: center;
-  }
 }
+

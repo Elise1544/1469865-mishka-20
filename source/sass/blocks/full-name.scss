@@ -1,40 +1,76 @@
-@import "../variables.scss";
+.full-name--wrapper {
+  margin-top: 35px;
 
-.full-name {
   @media (min-width: $tablet-width) {
-    padding: 0 50px;
+    padding: 50px;
+    padding-bottom: 0;
     display: flex;
     flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 225px 0 97px;
+    padding: 47px 225px 0 112px;
   }
 }
 
 .full-name__title {
+  margin-bottom: 30px;
+
+  font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
   color: $light-green;
+  position: relative;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 18px;
     width: 23%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 12.5%;
+    width: 14%;
+  }
+}
+
+.full-name__title::after {
+  content: "";
+  position: absolute;
+  width: 198px;
+  height: 1px;
+  top: 50%;
+  left: 63px;
+  background-color: $aquamarine;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.full-name__wrap {
+  @media (min-width: $tablet-width) {
+    width: 77%;
+    padding-left: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
   }
 }
 
 .full-name__name {
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 22px;
   width: 100%;
+  cursor: pointer;
 
   line-height: 18px;
   font-weight: 700;
 
   @media (min-width: $tablet-width) {
+    width: 100%;
+    margin-bottom: 24px;
+
     font-size: 19px;
   }
 }
@@ -42,15 +78,23 @@
 .full-name__input {
   width: 100%;
   display: block;
-  margin-top: 10px;
-  padding: 0 10px;
+  min-height: 52px;
+
+  border: none;
+  box-shadow: inset 0px -2px 0px $black;
+
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
 
   @media (min-width: $tablet-width) {
-    margin-left: 30px;
+    margin-left: 18px;
+    padding-left: 19px;
     display: inline-block;
     width: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 0;
   }
 }

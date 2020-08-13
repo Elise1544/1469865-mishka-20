@@ -1,39 +1,83 @@
-@import "../variables.scss";
-
 .phone {
-  @media (min-width: $tablet-width) {
-    padding: 0 50px;
-    display: flex;
+  margin-top: 35px;
 
+  @media (min-width: $tablet-width) {
+    margin-top: 29px;
     background-color: $steel;
+  }
+}
+
+.phone--wrapper {
+  @media (min-width: $tablet-width) {
+    padding: 50px;
+    padding-bottom: 0;
+    display: flex;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 225px 0 97px;
+    padding: 50px 225px 12px 112px;
   }
 }
 
 .phone__title {
+  font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
+
   color: $light-green;
+  position: relative;
+
+  margin-bottom: 3px;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 12px;
     width: 30%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 14.5%;
+    width: 14%;
+  }
+}
+
+.phone__title::after {
+  content: "";
+  position: absolute;
+  width: 198px;
+  height: 1px;
+  top: 50%;
+  left: 63px;
+  background-color: $aquamarine;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
 .phone__name {
   width: 100%;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 15px;
+  }
 }
 
 .phone__input {
   width: 100%;
+
   font-family: inherit;
-  font-size: inherit;
+  font-size: 19px;
   line-height: inherit;
+
+  min-height: 52px;
+  border: none;
+  box-shadow: inset 0px -2px 0px $black;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 15px;
+    padding-bottom: 10px;
+
+    background-color: inherit;
+  }
 }

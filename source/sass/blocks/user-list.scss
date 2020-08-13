@@ -1,8 +1,8 @@
 .user-list {
+  // display: none;
   margin: 0;
   padding: 0;
   list-style: none;
-  text-align: center;
 
   @media (min-width: $tablet-width) {
     display: flex;
@@ -12,5 +12,74 @@
 }
 
 .user-list__item {
+  display: flex;
+  align-items: center;
   padding: 10px;
+  padding-top: 12px;
+  min-height: 79px;
+
+  box-shadow: 0px 1px 0px $dark-steel, inset 0px 1px 0px $dark-steel;
+
+  @media (min-width: $tablet-width) {
+    box-shadow: none;
+    padding-top: 10px;
+
+    min-height: 89px;
+  }
+}
+
+.user-list__link {
+  display: block;
+  margin-left: 7%;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+  }
+}
+
+.user-list__item--search {
+  @media (min-width: $tablet-width) {
+    min-width: 84px;
+    border-left: 1px solid $black-active;
+  }
+}
+
+.user-list__item--cart {
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-left: 30px;
+    border-left: 1px solid $black-active;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 33px;
+  }
+}
+
+.user-list__picture {
+  margin-right: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 31px;
+  }
+}
+
+.user-list__picture--search {
+  width: 18px;
+  height: 18px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+}
+
+.user-list__picture--cart {
+  width: 21px;
+  height: 18px;
+}
+
+.user-list__text--search {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

@@ -16,9 +16,11 @@
 $mobile-width-only: 767px;
 $tablet-width: 768px;
 $desktop-width: 1150px;
+$max-width: 1150px;
 
 // цвета
   $black: #000000;
+  $black-active: rgba(0, 0, 0, 0.1);
   $light-green: #63d1bb;
   $white: #ffffff;
   $grey: #444444;

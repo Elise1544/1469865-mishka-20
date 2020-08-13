@@ -1,4 +1,21 @@
+.description {
+  @media (min-width: $tablet-width) {
+    padding: 0 50px;
+    margin-bottom: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 225px;
+    margin-bottom: 35px;
+  }
+
+  // @media (min-width: $max-width) {
+  //   padding: 0 50px;
+  // }
+}
+
 .description__list {
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   padding: 0;
@@ -14,12 +31,51 @@
 }
 
 .description__item {
-  margin-bottom: 30px;
+  margin: 41px 0;
   padding-right: 10px;
   width: 50%;
 
   @media (max-width: $mobile-width-only) {
     width: 100%;
   }
+
+  @media (min-width: $tablet-width) {
+    margin: 55px 0;
+  }
 }
 
+.description__item--first {
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+}
+
+.description__item--second {
+  @media (min-width: $tablet-width) {
+    order: 3;
+  }
+}
+
+.description__item--third {
+  @media (min-width: $tablet-width) {
+    order: 5;
+  }
+}
+
+.description__item--fourth {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+.description__item--fifth {
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
+}
+
+.description__item--sixth {
+  @media (min-width: $tablet-width) {
+    order: 6;
+  }
+}

@@ -1,16 +1,26 @@
-@import "../variables.scss";
-
 .product {
   margin: 10px 0;
+  border: 1px solid $dark-steel;
+  position: relative;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-rows: min-content 1fr min-content min-content;
+    grid-template-columns: 50% 50%;
+    column-gap: 5px;
+
+    margin: 50px 0;
   }
 
   @media (min-width: $desktop-width) {
     display: block;
+    margin-bottom: 0;
   }
+}
+
+.product__link {
+  display: block;
+  margin: 0;
 }
 
 .product__link--title {
@@ -21,12 +31,20 @@
 }
 
 .product__title {
+  margin: 0;
+  margin-top: 28px;
+  padding-left: 28px;
+
   font-size: 17px;
   line-height: 24px;
   font-weight: 700;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 25px;
   }
 }
 
@@ -38,8 +56,8 @@
 }
 
 .product__picture {
-  width: 260px;
-  height: 195px;
+  width: 100%;
+  display: block;
 
   @media (min-width: $tablet-width) {
     width: 334px;
@@ -53,7 +71,11 @@
 }
 
 .product__description {
+  margin: 7px 0 41px 0;
+  padding-left: 28px;
+
   font-size: 13px;
+
   color: $grey;
 
   @media (min-width: $tablet-width) {
@@ -61,9 +83,20 @@
     grid-column: 2;
     grid-row: 2;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 60px;
+  }
+}
+
+.product__description--long-name {
+  margin-bottom: 40px;
 }
 
 .product__cost {
+  margin-bottom: 26px;
+  padding-left: 28px;
+
   font-size: 15px;
   line-height: 24px;
   font-weight: 700;
@@ -75,9 +108,26 @@
   }
 }
 
-.product__cart {
+.product__cost::before {
+  content: "";
+  position: absolute;
+  width: 204px;
+  height: 1px;
+  background-color: $dark-steel;
+  bottom: 73px;
+
   @media (min-width: $tablet-width) {
-    grid-column: 2;
-    grid-row: 4;
+    width: 268px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 256px;
+  }
+}
+
+.product__cart {
+  min-height: auto;
+  position: absolute;
+  bottom: 32px;
+  right: 27px;
 }

@@ -1,44 +1,114 @@
-@import "../variables.scss";
+.type--wrapper {
+  padding: 12px 0;
 
-.type {
   @media (min-width: $tablet-width) {
     padding: 0 50px;
+
     display: flex;
     flex-wrap: wrap;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 225px 0 97px;
+    padding: 0 225px 0 112px;
   }
 }
 
 .type__title {
+  position: relative;
+  margin-bottom: 35px;
+
+  font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
+
   color: $light-green;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 27px;
     width: 23%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 12.5%;
+    width: 15%;
+  }
+}
+
+.type__title::after {
+  content: "";
+  position: absolute;
+  width: 198px;
+  height: 1px;
+  top: 50%;
+  left: 63px;
+  background-color: $aquamarine;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
 .type__name {
+  position: relative;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
+  margin-top: 25px;
+  padding-left: 62px;
+
   line-height: 18px;
   font-weight: 700;
+  cursor: pointer;
 
   @media (min-width: $tablet-width) {
-  font-size: 19px;
+    margin-bottom: 60px;
+    padding-left: 92px;
+
+    font-size: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 72px;
   }
 }
 
 .type__wrap {
   @media (min-width: $tablet-width) {
     width: 70%;
+  }
+}
+
+.type__input {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+
+  position: absolute;
+  left: -5px;
+  top: -15px;
+
+  content: url("../../img/radio-off.svg");
+  width: 42px;
+  height: 42px;
+
+  @media (min-width: $tablet-width) {
+    width: 54px;
+    height: 55px;
+
+    left: 7px;
+    top: -21px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: -15px;
+    top: -21px;
+  }
+}
+
+.type__input:checked {
+  content: url("../../img/radio-on.svg");
+
+  @media (min-width: $tablet-width) {
+    width: 54px;
+    height: 55px;
   }
 }

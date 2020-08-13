@@ -1,37 +1,84 @@
-@import "../variables.scss";
-
 .additional {
+  margin-top: 33px;
+}
+
+.additional--wrapper {
   @media (min-width: $tablet-width) {
-    padding: 0 50px;
+    padding: 50px;
+    padding-top: 17px;
     display: flex;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 225px 0 97px;
+    padding: 15px 225px 48px 112px;
   }
 }
 
 .additional__title {
+  font-size: 17px;
   line-height: 16px;
   text-transform: uppercase;
+
   color: $light-green;
+  position: relative;
+
+  margin-bottom: 22px;
 
   @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-top: 17px;
     width: 30%;
   }
 
   @media (min-width: $desktop-width) {
-    width: 14.5%;
+    margin-top: 18px;
+
+    width: 14%;
+  }
+}
+
+.additional__title::after {
+  content: "";
+  position: absolute;
+  width: 198px;
+  height: 1px;
+  top: 50%;
+  left: 63px;
+  background-color: $aquamarine;
+
+  @media (min-width: $tablet-width) {
+    display: none;
   }
 }
 
 .additional__name {
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 15px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 14px;
+  }
 }
 
 .additional__input {
   width: 100%;
+  padding: 17px;
+  border: 2px solid $grey;
+
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
+
+  @media (min-width: $tablet-width) {
+    padding: 15px;
+
+    font-size: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 142px;
+  }
 }

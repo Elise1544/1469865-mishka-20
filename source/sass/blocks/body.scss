@@ -1,8 +1,7 @@
-@import "../variables.scss";
-
 .page__body {
   margin: 0;
   min-height: 100%;
+  position: relative;
 
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 17px;

@@ -1,14 +1,15 @@
 .production {
-  margin-top: 35px;
+  margin-top: 30px;
   margin-bottom: 55px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 25px;
+    margin-top: 52px;
     margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 105px;
+    max-width: 1050px;
+    margin: 25px auto 105px auto;
   }
 }
 
@@ -29,7 +30,7 @@
 .production__title {
   margin-left: 80px;
   padding: 10px;
-  padding-top: 0;
+  padding-top: 5px;
 
   font-size: 17px;
   line-height: 24px;
@@ -37,7 +38,7 @@
 
   @media (min-width: $tablet-width) {
     margin-left: 95px;
-    padding-top: 15px;
+    padding: 22px 10px 5px 10px;
 
     font-size: 20px;
   }
@@ -82,12 +83,12 @@
 
 .production__button {
   display: block;
-  margin: 43px auto 33px auto;
+  margin: 41px auto 33px auto;
 
   min-width: 192px;
 
   @media (min-width: $tablet-width) {
-    margin: 35px 42px 46px 42px;
+    margin: 41px 42px 46px 42px;
   }
 
   @media (min-width: $desktop-width) {

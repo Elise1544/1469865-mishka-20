@@ -7,15 +7,20 @@
 
     background-image: url(../../img/review@1x.jpg);
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url(../../img/review@2x.jpg);
+      background-size: 45.5%;
+    }
   }
 
   @media (min-width: $desktop-width) {
     padding-left: 225px;
-  }
 
-  // @media (min-width: $max-width) {
-  //   padding: 0 50px;
-  // }
+    @media (min-resolution: 2dppx) {
+      background-size: 35%;
+    }
+  }
 }
 
 .review__title {
@@ -42,10 +47,6 @@
     font-size: 53px;
     line-height: 57px;
   }
-
-  // @media (min-width: $max-width) {
-  //   padding-left: 175px;
-  // }
 }
 
 .review__text {

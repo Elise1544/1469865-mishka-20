@@ -7,12 +7,11 @@
 
   @media (min-width: $tablet-width) {
     padding: 0;
-    margin-bottom: 68px;
+    margin-bottom: 65px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 65px;
-    margin-bottom: 68px;
+    margin-top: 62px;
   }
 }
 
@@ -23,7 +22,7 @@
 
   @media (min-width: $tablet-width) {
   padding: 0 50px;
-  margin-top: 56px;
+  margin-top: 50px;
   margin-bottom: 43px;
 
   font-size: 43px;
@@ -32,8 +31,15 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 225px;
+    margin-bottom: 40px;
 
     font-size: 53px;
     line-height: 57px;
   }
 }
+
+// .about__review {
+//   @media (min-width: $desktop-width) {
+//     padding: 0 50px;
+//   }
+// }

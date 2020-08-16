@@ -32,10 +32,15 @@
 .main-information__mask {
   position: absolute;
   width: 100%;
-  height: 100%;
-  top: 0;
+  height: 24px;
+  bottom: -10px;
   left: 0;
   border: none;
+
+  @media (min-width: $desktop-width) {
+    height: 34px;
+    bottom: -15px;
+  }
 }
 
 // .main-information::after {

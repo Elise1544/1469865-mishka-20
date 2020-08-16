@@ -16,16 +16,13 @@
 
   @media (min-width: $desktop-width) {
     padding-left: 225px;
-
-    @media (min-resolution: 2dppx) {
-      background-size: 35%;
-    }
+    background-size: 35%;
   }
 }
 
 .review__title {
   margin: 0;
-  margin-top: 8px;
+  margin-top: 6px;
 
   font-size: 25px;
   line-height: 30px;
@@ -41,7 +38,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 80px;
+    margin-top: 76px;
     margin-bottom: 0;
 
     font-size: 53px;
@@ -68,7 +65,7 @@
 .review__author {
   display: flex;
   flex-direction: column;
-  margin-top: 17px;
+  margin-top: 19px;
 
   @media (min-width: $tablet-width) {
     grid-row: 3;
@@ -100,6 +97,10 @@
 
   color: $grey;
   font-style: normal;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 2px;
+  }
 }
 
 .review__button {
@@ -121,7 +122,7 @@
     grid-row: 1;
     grid-column: 2;
     margin-left: auto;
-    margin-top: 82px;
+    margin-top: 80px;
     min-width: 175px;
   }
 

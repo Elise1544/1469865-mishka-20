@@ -108,6 +108,8 @@
 }
 
 .page-header__nav {
+  z-index: 1;
+
   @media (min-width: $tablet-width) {
     grid-column: 1;
     grid-row: 2;
@@ -120,6 +122,7 @@
 }
 
 .page-header__info {
+  z-index: 1;
   display: none;
 
   @media (min-width: $tablet-width) {
@@ -144,6 +147,7 @@
 }
 
 .page-header__wrap {
+  z-index: 1;
   display: none;
   list-style: none;
 

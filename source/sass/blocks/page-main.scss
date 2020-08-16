@@ -76,10 +76,12 @@
 }
 
 .page-main__decor {
+  display: block;
   max-width: 1150px;
 
   @media (min-width: $desktop-width) {
     padding: 0 50px;
+    margin: 0 auto;
   }
 }
 

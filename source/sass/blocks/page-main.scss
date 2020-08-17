@@ -68,35 +68,6 @@
   }
 }
 
-.page-main__container {
-  height: 0;
-  width: 100%;
-  padding-top: 2%;
-  position: relative;
-}
-
-.page-main__decor {
-  display: block;
-  max-width: 1150px;
-
-  @media (min-width: $desktop-width) {
-    padding: 0 50px;
-    margin: 0 auto;
-  }
-}
-
-.page-main__container-mask {
-  display: none;
-
-  @media (min-width: $tablet-width) {
-    height: 0;
-    width: 100%;
-    padding-top: 3%;
-    position: relative;
-    bottom: 20px;
-  }
-}
-
 .page-main__mask {
   position: absolute;
   width: 100%;

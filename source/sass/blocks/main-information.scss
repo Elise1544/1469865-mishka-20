@@ -15,12 +15,14 @@
   }
 }
 
-.main-information__mask {
+.main-information:after {
   display: none;
 
   @media (min-width: $tablet-width) {
     display: block;
     position: absolute;
+    content: "";
+    background-image: url(../../img/bg-zigzag-fill.svg);
     width: 100%;
     height: 24px;
     bottom: -10px;

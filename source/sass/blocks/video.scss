@@ -2,10 +2,14 @@
   position: relative;
 }
 
-.video__main {
+.video__poster {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.video__main {
+  display: none;
 }
 
 .video__button {

@@ -1,1 +1,72 @@
 // Начните писать стили здесь
+@import "../sass/blocks/about.scss";
+@import "../sass/blocks/additional.scss";
+@import "../sass/blocks/button.scss";
+@import "../sass/blocks/catalog.scss";
+@import "../sass/blocks/color.scss";
+@import "../sass/blocks/communication.scss";
+@import "../sass/blocks/contacts.scss";
+@import "../sass/blocks/copyright.scss";
+@import "../sass/blocks/description.scss";
+@import "../sass/blocks/e-mail.scss";
+@import "../sass/blocks/form-section.scss";
+@import "../sass/blocks/form.scss";
+@import "../sass/blocks/full-name.scss";
+@import "../sass/blocks/hit.scss";
+@import "../sass/blocks/logo.scss";
+@import "../sass/blocks/main-information.scss";
+@import "../sass/blocks/main-nav.scss";
+@import "../sass/blocks/map.scss";
+@import "../sass/blocks/modal.scss";
+@import "../sass/blocks/nav-list.scss";
+@import "../sass/blocks/body.scss";
+@import "../sass/blocks/page-footer.scss";
+@import "../sass/blocks/page-header.scss";
+@import "../sass/blocks/page-main.scss";
+@import "../sass/blocks/phone.scss";
+@import "../sass/blocks/product.scss";
+@import "../sass/blocks/production.scss";
+@import "../sass/blocks/review.scss";
+@import "../sass/blocks/social.scss";
+@import "../sass/blocks/subjects.scss";
+@import "../sass/blocks/table.scss";
+@import "../sass/blocks/type.scss";
+@import "../sass/blocks/user-list.scss";
+@import "../sass/blocks/video.scss";
+@import "../sass/variables.scss";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  max-width: 1150px;
+  margin: 0 auto;
+}

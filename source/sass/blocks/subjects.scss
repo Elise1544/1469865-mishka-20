@@ -38,6 +38,13 @@
   }
 }
 
+.subjects__interior:hover,
+.subjects__interior:focus,
+.subjects__toys:hover,
+.subjects__interior:focus {
+  min-height: 108px;
+}
+
 .subjects__interior {
   background-color: $light-green;
 }
@@ -90,9 +97,9 @@
 .subjects__link:focus {
   background-color: $green;
   padding-bottom: 10px;
-  min-height: 124px;
 
   @media (min-width: $tablet-width) {
+    min-height: 124px;
     padding-bottom: 30px;
   }
 

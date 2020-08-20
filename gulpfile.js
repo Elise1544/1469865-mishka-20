@@ -70,7 +70,7 @@ exports.sprite = sprite;
 const webp = require("gulp-webp");
 
 const picture = () => {
-  return gulp.src("source/img/**/*.{png,ipg}")
+  return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({quality: 90}))
     .pipe(gulp.dest("source/img"))
 }

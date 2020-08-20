@@ -7,6 +7,7 @@
   display: block;
   margin: auto;
   height: 100%;
+  fill: $black;
 
   @media (min-width: $tablet-width) {
     margin: 0;
@@ -22,8 +23,28 @@
   }
 }
 
+.logo__picture:hover,
+.logo__picture:focus {
+  opacity: 0.6;
+}
+
+.logo__picture:active {
+  opacity: 0.3;
+}
+
 .logo__picture--footer {
   margin: 0;
   width: 101px;
   height: 34px;
+}
+
+.logo__picture--footer:hover,
+.logo__picture--footer:focus {
+  fill: $green-active;
+  opacity: 1;
+}
+
+.logo__picture--footer:active {
+  fill: $green-active;
+  opacity: 0.3;
 }

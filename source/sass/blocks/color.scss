@@ -57,7 +57,7 @@
 .color__name {
   position: relative;
   margin: 30px 50px 44px 0;
-  padding-left: 65px;
+  padding-left: 63px;
   display: block;
   cursor: pointer;
 
@@ -100,22 +100,44 @@
   cursor: pointer;
 
   position: absolute;
-  left: -5px;
-  top: -15px;
+  left: -3px;
+  top: -14px;
 
   content: url("../../img/checkbox-off.svg");
-  width: 40px;
-  height: 39px;
+  width: 38px;
+  height: 38px;
 
   @media (min-width: $tablet-width) {
-    width: 54px;
+    width: 52px;
     height: 52px;
 
     left: -2px;
-    top: -17px;
+    top: -19px;
   }
 }
 
 .color__input:checked {
   content: url("../../img/checkbox-on.svg");
+}
+
+.color__input:hover,
+.color__input:focus {
+  content: url("../../img/checkbox-off-hover.svg");
+}
+
+.color__input:checked:hover,
+.color__input:checked:focus {
+  content: url("../../img/checkbox-on-hover.svg");
+}
+
+.color__input:active {
+  content: url("../../img/checkbox-off-down.svg");
+}
+
+.color__input:checked:active {
+  content: url("../../img/checkbox-on-down.svg");
+}
+
+.color__input:disabled {
+  cursor: no-drop;
 }

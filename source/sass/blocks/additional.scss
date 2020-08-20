@@ -1,5 +1,5 @@
 .additional {
-  margin-top: 33px;
+  margin-top: 35px;
 }
 
 .additional--wrapper {
@@ -81,4 +81,9 @@
   @media (min-width: $desktop-width) {
     min-height: 142px;
   }
+}
+
+.additional__input:hover,
+.additional__input:focus {
+  border: 2px solid $aquamarine;
 }

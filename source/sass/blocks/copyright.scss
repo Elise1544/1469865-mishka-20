@@ -1,8 +1,47 @@
+.copyright {
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 102px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 293px;
+  }
+}
+
 .copyright__title {
   display: inline-block;
+  margin-top: 32px;
 
   font-size: 19px;
   line-height: 18px;
   font-weight: 700;
   margin-right: 25px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 7px;
+  }
+}
+
+.copyright__picture {
+  position: absolute;
+  top: 26px;
+  right: 1px;
+  fill: $light-green;
+
+  @media (min-width: $tablet-width) {
+    top: 0;
+    right: -30px;
+  }
+}
+
+.copyright__picture:hover,
+.copyright__picture:focus {
+  fill: $green-active;
+}
+
+.copyright__picture:active {
+  fill: $green-active;
+  opacity: 0.3;
 }

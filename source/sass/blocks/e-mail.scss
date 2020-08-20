@@ -55,6 +55,7 @@
 }
 
 .e-mail__name {
+  position: relative;
   width: 100%;
   cursor: pointer;
 
@@ -81,4 +82,34 @@
 
     background-color: inherit;
   }
+}
+
+.e-mail__input:hover,
+.e-mail__input:focus {
+  box-shadow: inset 0px -2px 0px $aquamarine;
+}
+
+.e-mail__picture {
+  opacity: 0.2;
+  position: absolute;
+  right: -2px;
+  bottom: -6px;
+  width: 42px;
+  height: 31px;
+
+  @media (min-width: $tablet-width) {
+    right: 17px;
+    bottom: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 0;
+    bottom: 8px;
+  }
+}
+
+.e-mail__picture:hover,
+.e-mail__picture:focus {
+  fill: $aquamarine;
+  opacity: 1;
 }

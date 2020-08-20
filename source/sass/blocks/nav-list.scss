@@ -39,6 +39,15 @@
   }
 }
 
+.nav-list__link:hover,
+.nav-list__link:focus {
+  opacity: 0.6;
+}
+
+.nav-list__link:active {
+  opacity: 0.3;
+}
+
 .nav-list__item--catalog {
   @media (min-width: $tablet-width) {
     padding-left: 0;

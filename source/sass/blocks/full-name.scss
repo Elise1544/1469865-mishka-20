@@ -50,11 +50,13 @@
 .full-name__wrap {
   @media (min-width: $tablet-width) {
     width: 77%;
+    margin-top: 15px;
     padding-left: 15px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0;
+    width: 86%;
   }
 }
 
@@ -68,8 +70,9 @@
   font-weight: 700;
 
   @media (min-width: $tablet-width) {
+    display: flex;
     width: 100%;
-    margin-bottom: 24px;
+    margin-bottom: 39px;
 
     font-size: 19px;
   }
@@ -88,13 +91,23 @@
   line-height: inherit;
 
   @media (min-width: $tablet-width) {
-    margin-left: 18px;
-    padding-left: 19px;
-    display: inline-block;
-    width: auto;
+    margin-left: 22px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+    min-height: 37px;
   }
 
   @media (min-width: $desktop-width) {
     margin-top: 0;
   }
+}
+
+.full-name__input:hover,
+.full-name__input:focus {
+  box-shadow: inset 0px -2px 0px $aquamarine;
+}
+
+.full-name__input:active {
+  background-color: inherit;
 }

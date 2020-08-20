@@ -1,17 +1,13 @@
 .description {
   @media (min-width: $tablet-width) {
     padding: 0 50px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
     padding: 0 225px;
     margin-bottom: 35px;
   }
-
-  // @media (min-width: $max-width) {
-  //   padding: 0 50px;
-  // }
 }
 
 .description__list {
@@ -31,6 +27,7 @@
 }
 
 .description__item {
+  position: relative;
   margin: 41px 0;
   padding-right: 10px;
   width: 50%;
@@ -44,10 +41,22 @@
   }
 }
 
+.description__picture {
+  fill: $light-green;
+}
+
 .description__item--first {
+  margin-top: 42px;
   @media (min-width: $tablet-width) {
     order: 1;
+    margin-top: 55px;
   }
+}
+
+.description__picture--first{
+  position: absolute;
+  top: -55px;
+  left: 8px;
 }
 
 .description__item--second {
@@ -56,9 +65,27 @@
   }
 }
 
+.description__picture--second {
+  position: absolute;
+  top: -52px;
+  left: 0;
+}
+
 .description__item--third {
+  margin-top: 43px;
   @media (min-width: $tablet-width) {
     order: 5;
+    margin-top: 56px;
+  }
+}
+
+.description__picture--third {
+  position: absolute;
+  top: -47px;
+  left: 7px;
+
+  @media (min-width: $tablet-width) {
+    top: -50px;
   }
 }
 
@@ -68,14 +95,47 @@
   }
 }
 
+.description__picture--fourth {
+  position: absolute;
+  top: -50px;
+  left: 3px;
+
+  @media (min-width: $tablet-width) {
+    top: -52px;
+  }
+}
+
 .description__item--fifth {
   @media (min-width: $tablet-width) {
     order: 4;
+    margin-top: 57px;
+  }
+}
+
+.description__picture--fifth {
+  position: absolute;
+  top: -48px;
+  left: -7px;
+
+  @media (min-width: $tablet-width) {
+    top: -50px;
   }
 }
 
 .description__item--sixth {
+  margin-top: 43px;
   @media (min-width: $tablet-width) {
     order: 6;
+    margin-top: 57px;
+  }
+}
+
+.description__picture--sixth {
+  position: absolute;
+  top: -50px;
+  left: 3px;
+
+  @media (min-width: $tablet-width) {
+    top: -55px;
   }
 }

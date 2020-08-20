@@ -10,4 +10,15 @@
 
   color: $grey;
   background-color: inherit;
+  cursor: pointer;
+}
+
+.button:hover,
+.button:focus {
+  background-color: $grey;
+  color: $white;
+}
+
+.button:active {
+  color: $white-active;
 }

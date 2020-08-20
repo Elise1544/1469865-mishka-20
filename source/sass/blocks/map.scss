@@ -1,3 +1,7 @@
+.map {
+  position: relative;
+}
+
 .map__picture {
   width: 100%;
   height: auto;
@@ -10,5 +14,23 @@
   @media (min-width: $desktop-width) {
     width: 527px;
     height: 457px;
+  }
+}
+
+.map__icon {
+  position: absolute;
+  top: 31%;
+  left: 43%;
+  width: 67px;
+  height: 100px;
+
+  @media (min-width: $tablet-width) {
+    top: 30%;
+    left: 47%;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 28%;
+    left: 41%;
   }
 }

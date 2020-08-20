@@ -86,7 +86,7 @@
   left: -5px;
   top: -11px;
 
-  content: url("../../img/radio-off.svg");
+  content: url("../img/radio-off.svg");
   width: 42px;
   height: 42px;
 
@@ -105,7 +105,7 @@
 }
 
 .type__input:checked {
-  content: url("../../img/radio-on.svg");
+  content: url("../img/radio-on.svg");
 
   @media (min-width: $tablet-width) {
     width: 52px;
@@ -115,20 +115,20 @@
 
 .type__input:hover,
 .type__input:focus {
-  content: url("../../img/radio-off-hover.svg");
+  content: url("../img/radio-off-hover.svg");
 }
 
 .type__input:checked:hover,
 .type__input:checked:focus {
-  content: url("../../img/radio-on-hover.svg");
+  content: url("../img/radio-on-hover.svg");
 }
 
 .type__input:active {
-  content: url("../../img/radio-off-down.svg");
+  content: url("../img/radio-off-down.svg");
 }
 
 .type__input:checked:active {
-  content: url("../../img/radio-on-down.svg");
+  content: url("../img/radio-on-down.svg");
 }
 
 .type__input:disabled {

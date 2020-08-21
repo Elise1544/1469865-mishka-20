@@ -89,27 +89,29 @@
   box-shadow: inset 0px -2px 0px $aquamarine;
 }
 
-.e-mail__picture {
-  opacity: 0.2;
+.e-mail__name:after {
+  content: "";
   position: absolute;
-  right: -2px;
-  bottom: -6px;
-  width: 42px;
-  height: 31px;
+  background-image: url("../img/icon-mail.svg");
+  width: 32px;
+  height: 32px;
+  right: 2px;
+  bottom: -7px;
+  opacity: 0.2;
 
   @media (min-width: $tablet-width) {
-    right: 17px;
+    right: 22px;
     bottom: 8px;
   }
 
   @media (min-width: $desktop-width) {
-    right: 0;
+    right: 3px;
     bottom: 8px;
   }
 }
 
-.e-mail__picture:hover,
-.e-mail__picture:focus {
+.e-mail__name:hover:after,
+.e-mail__name:focus:after {
   fill: $aquamarine;
   opacity: 1;
 }

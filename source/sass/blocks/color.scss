@@ -74,7 +74,8 @@
 
   @media (min-width: $desktop-width) {
     width: 28%;
-    margin: 31px 17px 28px 0;
+    margin: 32px 17px 28px 0;
+    padding-left: 83px;
   }
 }
 
@@ -103,7 +104,9 @@
   left: -3px;
   top: -14px;
 
-  content: url("../img/checkbox-off.svg");
+  background-image: url("../img/checkbox-off.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
   width: 38px;
   height: 38px;
 
@@ -117,25 +120,25 @@
 }
 
 .color__input:checked {
-  content: url("../img/checkbox-on.svg");
+  background-image: url("../img/checkbox-on.svg");
 }
 
 .color__input:hover,
 .color__input:focus {
-  content: url("../img/checkbox-off-hover.svg");
+  background-image: url("../img/checkbox-off-hover.svg");
 }
 
 .color__input:checked:hover,
 .color__input:checked:focus {
-  content: url("../img/checkbox-on-hover.svg");
+  background-image: url("../img/checkbox-on-hover.svg");
 }
 
 .color__input:active {
-  content: url("../img/checkbox-off-down.svg");
+  background-image: url("../img/checkbox-off-down.svg");
 }
 
 .color__input:checked:active {
-  content: url("../img/checkbox-on-down.svg");
+  background-image: url("../img/checkbox-on-down.svg");
 }
 
 .color__input:disabled {

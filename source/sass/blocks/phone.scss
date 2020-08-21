@@ -88,16 +88,19 @@
   box-shadow: inset 0px -2px 0px $aquamarine;
 }
 
-.phone__picture {
-  opacity: 0.2;
+.phone__name:after {
+  z-index: 1;
+  content: "";
   position: absolute;
-  right: 7px;
-  bottom: 0;
+  background-image: url("../img/icon-phone.svg");
   width: 24px;
   height: 24px;
+  right: 8px;
+  bottom: 2px;
+  opacity: 0.2;
 
   @media (min-width: $tablet-width) {
-    right: 26px;
+    right: 28px;
     bottom: 19px;
   }
 
@@ -107,8 +110,8 @@
   }
 }
 
-.phone__picture:hover,
-.phone__picture:focus {
+.phone__name:hover:after,
+.phone__name:focus:after {
   fill: $aquamarine;
   opacity: 1;
 }

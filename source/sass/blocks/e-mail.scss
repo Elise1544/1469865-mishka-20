@@ -55,6 +55,7 @@
 }
 
 .e-mail__name {
+  position: relative;
   width: 100%;
   cursor: pointer;
 
@@ -81,4 +82,37 @@
 
     background-color: inherit;
   }
+}
+
+.e-mail__input:hover,
+.e-mail__input:focus {
+  box-shadow: inset 0px -2px 0px $aquamarine;
+}
+
+.e-mail__name:after {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-mail.svg");
+  width: 32px;
+  height: 32px;
+  right: 2px;
+  bottom: -7px;
+  filter: grayscale(100%);
+  opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    right: 22px;
+    bottom: 8px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 3px;
+    bottom: 8px;
+  }
+}
+
+.e-mail__name:hover:after,
+.e-mail__name:focus:after {
+  filter: none;
+  opacity: 1;
 }

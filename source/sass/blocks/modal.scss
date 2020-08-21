@@ -56,10 +56,22 @@
   padding: 5px;
   border: 2px solid rgba(68, 68, 68, 0.1);
   color: $grey;
+  background-color: inherit;
 
   @media (min-width: $tablet-width) {
     min-width: 112px;
   }
+}
+
+.modal__button:hover,
+.modal__button:focus {
+  background-color: inherit;
+  color: inherit;
+  border: 2px solid rgba(68, 68, 68, 0.3);
+}
+
+.modal__button:active {
+  border: 2px solid $aquamarine;
 }
 
 .modal__button--active {

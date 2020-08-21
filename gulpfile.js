@@ -6,19 +6,20 @@ const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
 
+
 // Styles
 
 const styles = () => {
   return gulp.src("source/sass/style.scss")
-    .pipe(plumber())
-    .pipe(sourcemap.init())
-    .pipe(sass())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
-    .pipe(sync.stream());
+  .pipe(plumber())
+  .pipe(sourcemap.init())
+  .pipe(sass())
+  .pipe(postcss([
+    autoprefixer()
+  ]))
+  .pipe(sourcemap.write("."))
+  .pipe(gulp.dest("source/css"))
+  .pipe(sync.stream());
 }
 
 exports.styles = styles;
@@ -48,4 +49,30 @@ const watcher = () => {
 
 exports.default = gulp.series(
   styles, server, watcher
-);
+  );
+
+  //svg
+
+  const rename = require("gulp-rename");
+  const svgstore = require("gulp-svgstore");
+
+  const sprite = () => {
+    return gulp.src("source/img/**/icon-*.svg")
+      .pipe(svgstore())
+      .pipe(rename("sprite.svg"))
+      .pipe(gulp.dest("source/img"))
+}
+
+exports.sprite = sprite;
+
+// webp
+
+const webp = require("gulp-webp");
+
+const picture = () => {
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("source/img"))
+}
+
+exports.picture = picture;

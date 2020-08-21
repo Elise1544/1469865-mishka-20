@@ -2,7 +2,7 @@
   margin-top: 35px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 29px;
+    margin-top: 10px;
     background-color: $steel;
   }
 }
@@ -55,6 +55,7 @@
 }
 
 .phone__name {
+  position: relative;
   width: 100%;
   cursor: pointer;
 
@@ -80,4 +81,38 @@
 
     background-color: inherit;
   }
+}
+
+.phone__input:hover,
+.phone__input:focus {
+  box-shadow: inset 0px -2px 0px $aquamarine;
+}
+
+.phone__name:after {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon-phone.svg");
+  width: 24px;
+  height: 24px;
+  right: 8px;
+  bottom: 2px;
+  filter: grayscale(100%);
+  opacity: 0.2;
+
+  @media (min-width: $tablet-width) {
+    right: 28px;
+    bottom: 19px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 8px;
+    bottom: 17px;
+  }
+}
+
+.phone__name:hover:after,
+.phone__name:focus:after {
+  filter: none;
+  opacity: 1;
 }

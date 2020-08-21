@@ -175,3 +175,12 @@
     margin-right: 52px;
   }
 }
+
+.page-header__link:hover,
+.page-header__link:focus {
+  opacity: 0.6;
+}
+
+.page-header__link:active {
+  opacity: 0.3;
+}

@@ -97,6 +97,7 @@
   height: 24px;
   right: 8px;
   bottom: 2px;
+  filter: grayscale(100%);
   opacity: 0.2;
 
   @media (min-width: $tablet-width) {
@@ -112,6 +113,6 @@
 
 .phone__name:hover:after,
 .phone__name:focus:after {
-  fill: $aquamarine;
+  filter: none;
   opacity: 1;
 }

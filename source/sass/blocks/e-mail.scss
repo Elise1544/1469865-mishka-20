@@ -97,6 +97,7 @@
   height: 32px;
   right: 2px;
   bottom: -7px;
+  filter: grayscale(100%);
   opacity: 0.2;
 
   @media (min-width: $tablet-width) {
@@ -112,6 +113,6 @@
 
 .e-mail__name:hover:after,
 .e-mail__name:focus:after {
-  fill: $aquamarine;
+  filter: none;
   opacity: 1;
 }

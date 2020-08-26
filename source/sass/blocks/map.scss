@@ -1,10 +1,11 @@
 .map {
-  position: relative;
+  text-align: center;
 }
 
 .map__picture {
-  width: 100%;
-  height: auto;
+  width: 320px;
+  height: 454px;
+  border: none;
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -18,6 +19,7 @@
 }
 
 .map__icon {
+  z-index: -1;
   position: absolute;
   top: 31%;
   left: 43%;
@@ -30,7 +32,33 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 28%;
-    left: 41%;
+    top: 32%;
+    left: 43%;
+  }
+}
+
+.map__container {
+  position: relative;
+  min-height: 454px;
+}
+
+.map__image{
+  z-index: -1;
+  position: absolute;
+  width: 320px;
+  height: 454px;
+  left: calc(50% - 160px);
+  top: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 457px;
+    left: calc(50% - 384px);
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 527px;
+    height: 457px;
+    left: 12px;
   }
 }

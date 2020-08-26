@@ -1,11 +1,18 @@
 .nav-list {
-  // display: none;
+
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
 
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
     align-items: baseline;
   }
+}
+
+.nav-list--mobile {
+  display: block;
 }
 
 .nav-list__item {

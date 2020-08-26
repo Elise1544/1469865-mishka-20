@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Мишка</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -53,7 +53,7 @@
         <li class="page-header__sales"><a class="page-header__link" href="blank.html">Распродажа</a></li>
       </ul>
       <p class="page-header__info">Бесплатная доставка по России</p>
-      <button type="button" class="page-header__button page-header--opened button"><span class="visually-hidden">Меню
+      <button type="button" class="page-header__button page-header--closed button"><span class="visually-hidden">Меню
           навигации</span></button>
     </div>
   </header>
@@ -112,7 +112,7 @@
           width="260" height="315" alt="Вязаные корзинки">
       </picture>
       <p class="hit__cost">Цена: 990 руб.</p>
-      <button class="hit__button button" type="submit">Заказать</button>
+      <button class="hit__button button modal-button" type="submit">Заказать</button>
     </section>
     <section class="about">
       <div class="wrapper about--wrapper">
@@ -169,19 +169,25 @@
           </div>
         </div>
         <div class="contacts__map map">
-          <picture>
-            <source media="(min-width: 1150px)" type="image/webp"
-              srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
-            <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" type="image/webp" srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
-            <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+          <div class="map__container">
+            <iframe class="map__picture"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x62740c0ffcd8a91f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsIDEwMSwg0KHQsNC90LrRgi3Qn9C10YLQtdGA0LHRg9GA0LMsIDE5MTE4Ng!5e0!3m2!1sru!2sru!4v1598023652270!5m2!1sru!2sru"
+              width="320" height="454" allowfullscreen></iframe>
+            <picture>
+              <source media="(min-width: 1150px)" type="image/webp"
+                srcset="img/map-desktop@1x.webp 1x, img/map-desktop@2x.webp 2x">
+              <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" type="image/webp"
+                srcset="img/map-tablet@1x.webp 1x, img/map-tablet@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
               <source type="image/webp" srcset="img/map-mobile@1x.webp 1x, img/map-mobile@2x.webp 2x">
-            <img class="map__picture" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="322"
-              height="457" alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101">
-          </picture>
-          <svg role="img" class="map__icon" width="67" height="100">
-            <use xlink:href="img/sprite.svg#icon-map-pin"></use>
-          </svg>
+              <img class="map__image" src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" width="322"
+                height="457" alt="Наш адрес: г. Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101">
+            </picture>
+            <svg role="img" class="map__icon" width="67" height="100">
+              <use xlink:href="img/sprite.svg#icon-map-pin"></use>
+            </svg>
+          </div>
         </div>
         <a class="contacts__link" href="blank.html"><button class="contacts__write-us button" type="submit">Напишите
             нам</button></a>
@@ -247,16 +253,20 @@
       </div>
     </div>
   </footer>
-  <div class="modal">
-    <h3 class="modal__title">Добавить в корзину</h3>
-    <p class="modal__choice">Выберите размер:</p>
-    <ul class="modal__list">
-      <li class="modal__item"><button class="modal__button modal__button--active button" type="button">S</button></li>
-      <li class="modal__item"><button class="modal__button button" type="button">M</button></li>
-      <li class="modal__item"><button class="modal__button button" type="button">L</button></li>
-    </ul>
-    <button class="modal__add button" type="submit">Добавить</button>
+    <div class="modal">
+      <h3 class="modal__title">Добавить в корзину</h3>
+      <p class="modal__choice">Выберите размер:</p>
+      <ul class="modal__list">
+        <li class="modal__item"><button class="modal__button button" type="button">S</button></li>
+        <li class="modal__item"><button class="modal__button button" type="button">M</button></li>
+        <li class="modal__item"><button class="modal__button button" type="button">L</button></li>
+      </ul>
+      <a class="modal__link" href="blank.html"><button class="modal__add button" type="submit">Добавить</button></a>
   </div>
+  <div class="modal-wrapper"></div>
+
+  <script src="js/scripts.min.js"></script>
+
 </body>
 
 </html>

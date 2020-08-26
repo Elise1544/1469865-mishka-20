@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Страница с каталогом</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body class="page__body">
@@ -53,7 +53,7 @@
         <li class="page-header__sales"><a class="page-header__link" href="blank.html">Распродажа</a></li>
       </ul>
       <p class="page-header__info">Бесплатная доставка по России</p>
-      <button type="button" class="page-header__button page-header--opened button"><span class="visually-hidden">Меню
+      <button type="button" class="page-header__button page-header--closed button"><span class="visually-hidden">Меню
           навигации</span></button>
     </div>
   </header>
@@ -86,7 +86,7 @@
               </a>
               <p class="product__description">Рост 30 см, вес 200 г</p>
               <p class="product__cost">1 200 руб.</p>
-              <button class="product__cart button" type="button">
+              <button class="product__cart button modal-button" type="button">
                 <svg role="img" class="product__button" width="20" height="19">
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
@@ -115,7 +115,7 @@
               </a>
               <p class="product__description">Диаметр 15 см, высота 10 см</p>
               <p class="product__cost">690 руб.</p>
-              <button class="product__cart button" type="button">
+              <button class="product__cart button modal-button" type="button">
                 <svg role="img" class="product__button" width="20" height="19">
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
@@ -144,7 +144,7 @@
               </a>
               <p class="product__description product__description--long-name">Диаметр 30 см, высота 30 см</p>
               <p class="product__cost">1 500 руб.</p>
-              <button class="product__cart button" type="button">
+              <button class="product__cart button modal-button" type="button">
                 <svg role="img" class="product__button" width="20" height="19">
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
@@ -245,12 +245,15 @@
     <h3 class="modal__title">Добавить в корзину</h3>
     <p class="modal__choice">Выберите размер:</p>
     <ul class="modal__list">
-      <li class="modal__item"><button class="modal__button modal__button--active button" type="button">S</button></li>
+      <li class="modal__item"><button class="modal__button button" type="button">S</button></li>
       <li class="modal__item"><button class="modal__button button" type="button">M</button></li>
       <li class="modal__item"><button class="modal__button button" type="button">L</button></li>
     </ul>
-    <button class="modal__add button" type="submit">Добавить</button>
+    <a class="modal__link" href="blank.html"><button class="modal__add button" type="submit">Добавить</button></a>
   </div>
+  <div class="modal-wrapper"></div>
+
+  <script src="js/scripts.min.js"></script>
 </body>
 
 </html>

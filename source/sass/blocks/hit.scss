@@ -66,7 +66,6 @@
 .hit__time {
   margin: 0;
   line-height: 20px;
-  line-height: 20px;
   font-weight: 700;
   text-transform: uppercase;
   color: $light-green;
@@ -186,6 +185,8 @@
 .hit__button {
   margin-top: 8px;
   margin-bottom: 33px;
+  padding-top: 15px;
+  border: 2px solid $grey;
 
   @media (min-width: $tablet-width) {
     grid-row: 5;
@@ -198,7 +199,6 @@
     grid-row: 5;
     margin-bottom: 71px;
     margin-top: 5px;
-    padding: 7px;
     min-height: 0;
   }
 }

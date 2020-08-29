@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Страница с каталогом</title>
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+  <link rel="preload" href="/fonts/opensans.woff2" as="font">
 </head>
 
 <body class="page__body">
@@ -19,7 +21,7 @@
         </picture>
       </a>
       <nav class="page-header__nav main-nav">
-        <ul class="main-nav__list nav-list">
+        <ul class="main-nav__list nav-list nav-list--mobile">
           <li class="nav-list__item nav-list__item--catalog"><a class="nav-list__link" href="catalog.html">Каталог
               товаров</a></li>
           <li class="nav-list__item nav-list__item--booking"><a class="nav-list__link" href="form.html">Вязание на
@@ -27,7 +29,7 @@
         </ul>
       </nav>
       <div class="page-header__user">
-        <ul class="page-header__user user-list">
+        <ul class="page-header__user user-list user-list--mobile">
           <li class="user-list__item user-list__item--search">
             <a class="user-list__link" href="blank.html">
               <svg role="img" class="user-list__picture user-list__picture--search" width="18" height="18"
@@ -78,7 +80,7 @@
                     srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
                   <source type="image/webp" srcset="img/photo-hare-mobile@1x.webp 1x, img/photo-hare-mobile@2x.webp 2x">
                   <img class="product__picture" src="img/photo-hare-mobile@1x.jpg"
-                    srcset="img/photo-hare-mobile@2x.jpg 2x" width="260" height="195">
+                    srcset="img/photo-hare-mobile@2x.jpg 2x" width="260" height="195" alt="Зайчик">
                 </picture>
               </a>
               <a class="product__link product__link--title" href="blank.html">
@@ -86,11 +88,11 @@
               </a>
               <p class="product__description">Рост 30 см, вес 200 г</p>
               <p class="product__cost">1 200 руб.</p>
-              <button class="product__cart button modal-button" type="button">
-                <svg role="img" class="product__button" width="20" height="19">
+              <a class="product__cart button modal-button" href="blank.html">
+                <svg role="img" class="product__button" width="20" height="19" aria-label="Корзина">
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
-              </button>
+              </a>
             </article>
           </li>
           <li class="catalog__item">
@@ -107,7 +109,7 @@
                     srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
                   <source type="image/webp" srcset="img/photo-bowl-mobile@1x.webp 1x, img/photo-bowl-mobile@2x.webp 2x">
                   <img class="product__picture" src="img/photo-bowl-mobile@1x.jpg"
-                    srcset="img/photo-bowl-mobile@2x.jpg 2x" width="260" height="195">
+                    srcset="img/photo-bowl-mobile@2x.jpg 2x" width="260" height="195" alt="Корзинка для белья">
                 </picture>
               </a>
               <a class="product__link product__link--title" href="blank.html">
@@ -115,11 +117,11 @@
               </a>
               <p class="product__description">Диаметр 15 см, высота 10 см</p>
               <p class="product__cost">690 руб.</p>
-              <button class="product__cart button modal-button" type="button">
-                <svg role="img" class="product__button" width="20" height="19">
+              <a class="product__cart button modal-button" href="blank.html">
+                <svg role="img" class="product__button" width="20" height="19" aria-label="Корзина">
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
-              </button>
+              </a>
             </article>
           </li>
           <li class="catalog__item">
@@ -136,7 +138,7 @@
                     srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
                   <source type="image/webp" srcset="img/photo-toys-mobile@1x.webp 1x, img/photo-toys-mobile@2x.webp 2x">
                   <img class=" product__picture" src="img/photo-toys-mobile@1x.jpg"
-                    srcset="img/photo-toys-mobile@2x.jpg 2x" width="260" height="195">
+                    srcset="img/photo-toys-mobile@2x.jpg 2x" width="260" height="195" alt="Корзинка с игрушками">
                 </picture>
               </a>
               <a class="product__link product__link--title" href="blank.html">
@@ -144,11 +146,11 @@
               </a>
               <p class="product__description product__description--long-name">Диаметр 30 см, высота 30 см</p>
               <p class="product__cost">1 500 руб.</p>
-              <button class="product__cart button modal-button" type="button">
-                <svg role="img" class="product__button" width="20" height="19">
+              <a class="product__cart button modal-button" href="blank.html">
+                <svg role="img" class="product__button" width="20" height="19" aria-label="Корзина">
                   <use xlink:href="img/sprite.svg#icon-cart"></use>
                 </svg>
-              </button>
+              </a>
             </article>
           </li>
         </ul>
@@ -169,7 +171,7 @@
             <img class="video__poster" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x"
               alt="Видео о нашем производстве">
           </picture>
-          <video class="video__main" src="" width="260" height="150"></video>
+          <video class="video__main" width="260" height="150"></video>
           <button class="video__button">
             <svg role="img" class="video__icon" width="100" height="77">
               <use xlink:href="img/sprite.svg#icon-play"></use>
@@ -185,8 +187,8 @@
   <footer class="page-footer">
     <div class="wrapper page-footer--wrapper">
       <a class="page-footer__logo logo" href="index.html">
-        <svg class="logo__picture logo__picture--footer" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="101.615px" height="34.056px"
+        <svg class="logo__picture logo__picture--footer" version="1.1" xmlns="http://www.w3.org/2000/svg"
+          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="102" height="34"
           viewBox="0 0 101.615 34.056" enable-background="new 0 0 101.615 34.056" xml:space="preserve"
           aria-label="Мишка">
           <g>
@@ -230,8 +232,8 @@
       <div class="page-footer__copyright copyright">
         <p class="copyright__title">Разработано</p>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-          <svg class="copyright__picture" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
-            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px"
+          <svg class="copyright__picture" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="27" height="34"
             viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve"
             aria-label="HTML и CSS. Адаптивная вёрстка и автоматизация">
             <path
@@ -249,7 +251,7 @@
       <li class="modal__item"><button class="modal__button button" type="button">M</button></li>
       <li class="modal__item"><button class="modal__button button" type="button">L</button></li>
     </ul>
-    <a class="modal__link" href="blank.html"><button class="modal__add button" type="submit">Добавить</button></a>
+    <a class="modal__link button" href="blank.html">Добавить</a>
   </div>
   <div class="modal-wrapper"></div>
 

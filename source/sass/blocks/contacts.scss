@@ -13,7 +13,7 @@
 
 .contacts__description,
 .contacts__title {
-  padding: 0 30px 0 29px;
+  padding: 0 7% 0 9%;
 }
 
 .contacts__title {
@@ -45,10 +45,10 @@
   }
 }
 
-.contacts__title:after {
+.contacts__title::after {
   @media (min-width: $tablet-width) {
     content: "";
-    background-image: url(../img/icon-flag.svg);
+    background-image: url("../img/icon-flag.svg");
     position: absolute;
     width: 46px;
     height: 81px;
@@ -82,22 +82,7 @@
 
   @media (min-width: $desktop-width) {
     margin-top: 67px;
-    padding-right: 25px;
-  }
-}
-
-.contacts__link {
-  display: block;
-  text-align: center;
-  margin: 34px 0 25px 0;
-  padding: 0 30px;
-
-  grid-column: 1;
-  grid-row: 5;
-
-  @media (min-width: $desktop-width) {
-    margin: 53px 80px 45px 10px;;
-    padding: 0;
+    padding-right: 48px;
   }
 }
 
@@ -115,12 +100,25 @@
 }
 
 .contacts__write-us {
-  width: 100%;
+  display: block;
+  padding: 0 5px;
+  padding-top: 15px;
+  min-width: 260px;
+  width: auto;
+  border: 2px solid $grey;
+  grid-column: 1;
+  grid-row: 5;
+  margin: 33px 30px 0 30px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    min-width: 230px;
-    width: auto;
+    margin: 47px 0 21px 0;
+    margin-left: calc(50% - 115px);
+    width: 230px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 65px 120px 69px 50px;
+    padding: 0;
+    padding-top: 15px;
   }
 }

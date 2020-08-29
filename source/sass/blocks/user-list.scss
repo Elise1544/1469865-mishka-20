@@ -14,7 +14,9 @@
 }
 
 .user-list--mobile {
-  display: block;
+  @media (max-width: $mobile-width-only) {
+    display: block;
+  }
 }
 
 .user-list__item {
@@ -24,7 +26,7 @@
   padding-top: 12px;
   min-height: 79px;
 
-  box-shadow: 0px 1px 0px $dark-steel, inset 0px 1px 0px $dark-steel;
+  box-shadow: 0 1px 0 $dark-steel, inset 0 1px 0 $dark-steel;
 
   @media (min-width: $tablet-width) {
     box-shadow: none;

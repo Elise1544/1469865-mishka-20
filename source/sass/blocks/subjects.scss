@@ -8,7 +8,7 @@
   background-color: $light-green;
 
   @media (max-width: $mobile-width-only) {
-  display: block;
+    display: block;
   }
 
   @media (min-width: $tablet-width) {
@@ -41,7 +41,7 @@
 .subjects__interior:hover,
 .subjects__interior:focus,
 .subjects__toys:hover,
-.subjects__interior:focus {
+.subjects__toys:focus {
   min-height: 108px;
 }
 

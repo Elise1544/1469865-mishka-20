@@ -2,6 +2,11 @@ var menuButton = document.querySelector(".page-header__button");
 var navList = document.querySelector(".nav-list");
 var userList = document.querySelector(".user-list");
 
+document.addEventListener("DOMContentLoaded", function(evt) {
+  navList.classList.remove("nav-list--mobile");
+  userList.classList.remove("user-list--mobile");
+});
+
 menuButton.addEventListener("click", function(evt) {
   if (menuButton.classList.contains("page-header--closed")) {
     evt.preventDefault();
@@ -16,8 +21,7 @@ menuButton.addEventListener("click", function(evt) {
     navList.classList.remove("nav-list--mobile");
     userList.classList.remove("user-list--mobile");
   }
-}
-);
+});
 
 
 var modalLink = document.querySelectorAll(".modal-button");
@@ -42,3 +46,10 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
+modalWrapper.addEventListener("click", function (evt) {
+  if (modal.classList.contains("modal-show")) {
+    evt.preventDefault();
+    modal.classList.remove("modal-show");
+    modalWrapper.classList.remove("modal-wrapper--active");
+  }
+});

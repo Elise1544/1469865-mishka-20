@@ -73,7 +73,7 @@
 
   min-height: 52px;
   border: none;
-  box-shadow: inset 0px -2px 0px $black;
+  box-shadow: inset 0 -2px 0 $black;
 
   @media (min-width: $tablet-width) {
     padding-left: 15px;
@@ -85,10 +85,10 @@
 
 .phone__input:hover,
 .phone__input:focus {
-  box-shadow: inset 0px -2px 0px $aquamarine;
+  box-shadow: inset 0 -2px 0 $aquamarine;
 }
 
-.phone__name:after {
+.phone__name::after {
   z-index: 1;
   content: "";
   position: absolute;
@@ -111,8 +111,8 @@
   }
 }
 
-.phone__name:hover:after,
-.phone__name:focus:after {
+.phone__name:hover::after,
+.phone__name:focus::after {
   filter: none;
   opacity: 1;
 }

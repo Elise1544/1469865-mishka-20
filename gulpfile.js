@@ -49,6 +49,8 @@ const styles = () => {
       autoprefixer()
     ]))
     .pipe(csso())
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
     .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
@@ -137,7 +139,16 @@ const watcher = () => {
 };
 
 exports.default = gulp.series(
-  styles, server, watcher
+  clean,
+  copy,
+  styles,
+  scripts,
+  images,
+  picture,
+  sprite,
+  html,
+  server,
+  watcher
   );
 
 // Build

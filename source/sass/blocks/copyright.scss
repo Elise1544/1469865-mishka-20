@@ -1,13 +1,5 @@
 .copyright {
   position: relative;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 102px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 293px;
-  }
 }
 
 .copyright__title {

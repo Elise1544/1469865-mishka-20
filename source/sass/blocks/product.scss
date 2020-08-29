@@ -21,11 +21,11 @@
 
 .product:hover,
 .product:focus {
-  box-shadow: 0px 6px 10px $black-active;
+  box-shadow: 0 6px 10 $black-active;
 }
 
 .product:active {
-  box-shadow: 0px 3px 5px $black-active;
+  box-shadow: 0 3px 5 $black-active;
 }
 
 .product__link {

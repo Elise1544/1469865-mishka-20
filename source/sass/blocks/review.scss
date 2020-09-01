@@ -17,7 +17,7 @@
   @media (min-width: $desktop-width) {
     background-position: 50px 0;
     padding-left: 225px;
-    background-size: 35%;
+    background-size: 31%;
   }
 }
 
@@ -120,8 +120,8 @@
   }
 }
 
-.review__button--back,
-.review__button--forward {
+.review__arrow--back,
+.review__arrow--forward {
   display: inline-block;
   width: 50%;
   border: 1px solid $dark-steel;
@@ -135,24 +135,24 @@
   }
 }
 
-.review__button--back {
+.review__arrow--back {
   padding-left: 0;
 }
 
-.review__button--forward {
+.review__arrow--forward {
   padding-right: 10px;
 }
 
-.review__button--back:hover,
-.review__button--back:focus,
-.review__button--forward:hover,
-.review__button--forward:focus {
+.review__arrow--back:hover,
+.review__arrow--back:focus,
+.review__arrow--forward:hover,
+.review__arrow--forward:focus {
   background-color: inherit;
   opacity: 0.6;
 }
 
-.review__button--back:active,
-.review__button--forward:active {
+.review__arrow--back:active,
+.review__arrow--forward:active {
   opacity: 0.3;
 }
 

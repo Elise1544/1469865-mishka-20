@@ -1,4 +1,4 @@
-.contacts--wrapper {
+.contacts__wrapper {
   @media (min-width: $tablet-width) {
     margin-bottom: 7px;
   }
@@ -37,8 +37,8 @@
   @media (min-width: $desktop-width) {
     grid-row: 2;
     margin: 0;
-    margin-top: 147px;
-    margin-bottom: 16px;
+    margin-top: 145px;
+    margin-bottom: 17px;
 
     font-size: 53px;
     line-height: 57px;
@@ -86,19 +86,6 @@
   }
 }
 
-.contacts-email__link {
-  border-bottom: 1px solid $green-active;
-}
-
-.contacts-email__link:hover,
-.contacts-email__link:focus {
-  color: $green-active;
-}
-
-.contacts-email__link:active {
-  border-bottom: 1px solid $green-active-opacity;
-}
-
 .contacts__write-us {
   display: block;
   padding: 0 5px;
@@ -113,7 +100,8 @@
   @media (min-width: $tablet-width) {
     margin: 47px 0 21px 0;
     margin-left: calc(50% - 115px);
-    width: 230px;
+    margin-right: calc(50% - 115px);
+    min-width: 230px;
   }
 
   @media (min-width: $desktop-width) {

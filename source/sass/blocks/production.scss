@@ -1,28 +1,28 @@
 .production {
   margin-top: 30px;
-  margin-bottom: 55px;
+  margin-bottom: 18px;
 
   @media (min-width: $tablet-width) {
     margin-top: 52px;
-    margin-bottom: 60px;
+    margin-bottom: 25px;
   }
 
   @media (min-width: $desktop-width) {
     max-width: 1050px;
-    margin: 25px auto 105px auto;
+    margin: 25px auto 67px auto;
   }
 }
 
 .production:hover,
 .production:focus {
-  box-shadow: 0 6px 10 $black-active;
+  box-shadow: 0 6px 10px $black-active;
 }
 
 .production:active {
-  box-shadow: 0 3px 5 $black-active;
+  box-shadow: 0 3px 5px $black-active;
 }
 
-.production--wrapper {
+.production__wrapper {
   margin-top: 35px;
   border: 1px solid $dark-steel;
 
@@ -51,7 +51,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 20px;
+    top: 22px;
     left: 10px;
   }
 }
@@ -107,7 +107,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 2;
-    margin: 0 50px 10px 30px;
+    margin: 3px 50px 10px 30px;
   }
 }
 
@@ -125,7 +125,7 @@
     grid-column: 2;
     grid-row: 3;
     margin: auto;
-    margin-bottom: 60px;
+    margin-bottom: 59px;
 
     width: fit-content;
     height: fit-content;

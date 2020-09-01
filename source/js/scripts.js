@@ -8,16 +8,16 @@ document.addEventListener("DOMContentLoaded", function(evt) {
 });
 
 menuButton.addEventListener("click", function(evt) {
-  if (menuButton.classList.contains("page-header--closed")) {
+  if (menuButton.classList.contains("page-header__button--closed")) {
     evt.preventDefault();
-    menuButton.classList.remove("page-header--closed");
-    menuButton.classList.add("page-header--opened");
+    menuButton.classList.remove("page-header__button--closed");
+    menuButton.classList.add("page-header__button--opened");
     navList.classList.add("nav-list--mobile");
     userList.classList.add("user-list--mobile");
   } else {
     evt.preventDefault();
-    menuButton.classList.remove("page-header--opened");
-    menuButton.classList.add("page-header--closed");
+    menuButton.classList.remove("page-header__button--opened");
+    menuButton.classList.add("page-header__button--closed");
     navList.classList.remove("nav-list--mobile");
     userList.classList.remove("user-list--mobile");
   }

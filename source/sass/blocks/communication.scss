@@ -40,6 +40,15 @@
 
 .communication__email {
   border-bottom: 1px solid $green-active;
+  padding-bottom: 1px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 9px;
+  }
 }
 
 .communication__email:hover,

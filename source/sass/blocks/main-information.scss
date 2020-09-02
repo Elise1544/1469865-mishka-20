@@ -33,11 +33,9 @@
   @media (min-width: $desktop-width) {
     height: 34px;
     bottom: -15px;
-    right: 0;
-    left: 0;
     margin: auto;
     background-image: url("../img/zigzag-fill-desktop.svg");
-    text-align: center;
+    background-position: center;
   }
 }
 

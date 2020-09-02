@@ -82,6 +82,10 @@
 
     background-color: inherit;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 6px;
+  }
 }
 
 .e-mail__input:hover,
@@ -98,7 +102,7 @@
   right: 2px;
   bottom: -7px;
   filter: grayscale(100%);
-  opacity: 0.2;
+  opacity: 0.8;
 
   @media (min-width: $tablet-width) {
     right: 22px;

@@ -1,4 +1,4 @@
-.type--wrapper {
+.type__wrapper {
   padding: 12px 0;
 
   @media (min-width: $tablet-width) {
@@ -79,8 +79,6 @@
 
 .type__input {
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   cursor: pointer;
 
   position: absolute;

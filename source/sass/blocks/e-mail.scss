@@ -1,4 +1,4 @@
-.e-mail{
+.e-mail {
   margin-top: 35px;
 
   @media (min-width: $tablet-width) {
@@ -7,10 +7,10 @@
   }
 }
 
-.e-mail--wrapper {
+.e-mail__wrapper {
   @media (min-width: $tablet-width) {
     padding: 50px;
-    padding-top: 22px;
+    padding-top: 25px;
     display: flex;
   }
 
@@ -72,7 +72,7 @@
 
   min-height: 52px;
   border: none;
-  box-shadow: inset 0px -2px 0px $black;
+  box-shadow: inset 0 -2px 0 $black;
 
   @media (min-width: $tablet-width) {
     padding-left: 17px;
@@ -82,14 +82,18 @@
 
     background-color: inherit;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 6px;
+  }
 }
 
 .e-mail__input:hover,
 .e-mail__input:focus {
-  box-shadow: inset 0px -2px 0px $aquamarine;
+  box-shadow: inset 0 -2px 0 $aquamarine;
 }
 
-.e-mail__name:after {
+.e-mail__name::after {
   content: "";
   position: absolute;
   background-image: url("../img/icon-mail.svg");
@@ -98,7 +102,7 @@
   right: 2px;
   bottom: -7px;
   filter: grayscale(100%);
-  opacity: 0.2;
+  opacity: 0.8;
 
   @media (min-width: $tablet-width) {
     right: 22px;
@@ -111,8 +115,8 @@
   }
 }
 
-.e-mail__name:hover:after,
-.e-mail__name:focus:after {
+.e-mail__name:hover::after,
+.e-mail__name:focus::after {
   filter: none;
   opacity: 1;
 }

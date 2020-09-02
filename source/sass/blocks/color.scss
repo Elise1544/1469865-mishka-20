@@ -6,7 +6,7 @@
   }
 }
 
-.color--wrapper {
+.color__wrapper {
   padding: 5px 0;
 
   @media (min-width: $tablet-width) {
@@ -97,8 +97,6 @@
 
 .color__input {
   appearance: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
   cursor: pointer;
 
   position: absolute;

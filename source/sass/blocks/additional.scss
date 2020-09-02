@@ -1,11 +1,18 @@
 .additional {
-  margin-top: 35px;
+  margin-top: 36px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 36px;
+  }
 }
 
-.additional--wrapper {
+.additional__wrapper {
   @media (min-width: $tablet-width) {
-    padding: 50px;
-    padding-top: 17px;
+    padding: 17px 50px 53px 50px;
     display: flex;
   }
 
@@ -86,4 +93,5 @@
 .additional__input:hover,
 .additional__input:focus {
   border: 2px solid $aquamarine;
+  outline: none;
 }

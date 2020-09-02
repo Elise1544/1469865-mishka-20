@@ -8,17 +8,16 @@
   }
 }
 
-.page-footer--wrapper {
-  padding: 0 68px;
-  display: flex;
-  flex-direction: column;
+.page-footer__wrapper {
+  padding: 0 50px;
+  display: grid;
   min-height: 160px;
 
   @media (min-width: $tablet-width) {
     margin-top: 50px;
-    flex-direction: row;
-    padding: 50px 50px 0 50px;
+    padding: 50px 79px 0 50px;
     min-height: 143px;
+    grid-template-columns: min-content 1fr min-content;
   }
 }
 

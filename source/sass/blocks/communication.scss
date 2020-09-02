@@ -37,3 +37,25 @@
 .communication__value {
   padding-left: 15px;
 }
+
+.communication__email {
+  border-bottom: 1px solid $green-active;
+  padding-bottom: 1px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 9px;
+  }
+}
+
+.communication__email:hover,
+.communication__email:focus {
+  color: $green-active;
+}
+
+.communication__email:active {
+  border-bottom: 1px solid $green-active-opacity;
+}

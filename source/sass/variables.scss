@@ -2,14 +2,16 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: url(../fonts/opensans.woff2) format("woff2"), url(../fonts/opensans.woff) format("woff");
+  font-display: swap;
+  src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
 }
 
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
-  src: url(../fonts/opensansbold.woff2) format("woff2"), url(../fonts/opensansbold.woff) format("woff");
+  font-display: swap;
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
 }
 
 // размеры
@@ -18,21 +20,21 @@ $tablet-width: 768px;
 $desktop-width: 1150px;
 
 // цвета
-  $black: #000000;
-  $black-active: rgba(0, 0, 0, 0.1);
-  $light-green: #63d1bb;
-  $green: #59D5BC;
-  $white: #ffffff;
-  $white-active: rgba(255, 255, 255, 0.3);
-  $grey: #444444;
-  $dark-green: #149080;
-  $dark-steel: #ececec;
-  $steel: #f1f1f1;
-  $dark-grey: #231f20;
-  $dark-aquamarine: #56c3b2;
-  $aquamarine: #62d1ba;
-  $light-aquamarine: #6bc6b3;
-  $light-steel: #f9f9f9;
-  $silver: #e5e5e5;
-  $green-active: #46c1ae;
-  $green-active-opacity: rgba(70, 193, 174, 0.1);
+$black: #000000;
+$black-active: rgba(0, 0, 0, 0.1);
+$light-green: #63d1bb;
+$green: #59d5bc;
+$white: #ffffff;
+$white-active: rgba(255, 255, 255, 0.3);
+$grey: #444444;
+$dark-green: #149080;
+$dark-steel: #ececec;
+$steel: #f1f1f1;
+$dark-grey: #231f20;
+$dark-aquamarine: #56c3b2;
+$aquamarine: #62d1ba;
+$light-aquamarine: #6bc6b3;
+$light-steel: #f9f9f9;
+$silver: #e5e5e5;
+$green-active: #46c1ae;
+$green-active-opacity: rgba(70, 193, 174, 0.1);

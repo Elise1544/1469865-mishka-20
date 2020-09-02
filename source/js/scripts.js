@@ -5,6 +5,7 @@ var userList = document.querySelector(".user-list");
 document.addEventListener("DOMContentLoaded", function(evt) {
   navList.classList.remove("nav-list--mobile");
   userList.classList.remove("user-list--mobile");
+  menuButton.classList.add("page-header__button--closed");
 });
 
 menuButton.addEventListener("click", function(evt) {

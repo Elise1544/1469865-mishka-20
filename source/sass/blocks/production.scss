@@ -116,6 +116,7 @@
   margin: 41px auto 33px auto;
 
   min-width: 192px;
+  border: 2px solid $grey;
 
   @media (min-width: $tablet-width) {
     margin: 41px 42px 46px 42px;

@@ -55,7 +55,7 @@
     grid-column: 2/4;
     grid-row: 1;
     margin-top: 95px;
-    margin-bottom: 8px;
+    margin-bottom: 20px;
     z-index: 1;
 
     font-size: 53px;
@@ -111,6 +111,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 2;
     grid-row: 2;
+    margin-bottom: 29px;
   }
 }
 
@@ -130,8 +131,8 @@
   @media (min-width: $desktop-width) {
     grid-column: 2;
     grid-row: 3;
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 36px;
   }
 }
 
@@ -178,7 +179,7 @@
   @media (min-width: $desktop-width) {
     grid-column: 2;
     grid-row: 4;
-    margin-top: 65px;
+    margin-top: 60px;
   }
 }
 
@@ -198,7 +199,6 @@
     grid-column: 2;
     grid-row: 5;
     margin-bottom: 71px;
-    margin-top: 5px;
-    min-height: 0;
+    margin-top: 17px;
   }
 }

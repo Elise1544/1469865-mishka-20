@@ -74,6 +74,7 @@
   width: 100%;
   padding: 17px;
   border: 2px solid $grey;
+  min-width: 261px;
 
   font-family: inherit;
   font-size: inherit;
@@ -81,12 +82,14 @@
 
   @media (min-width: $tablet-width) {
     padding: 15px;
+    min-width: 499px;
 
     font-size: 19px;
   }
 
   @media (min-width: $desktop-width) {
     min-height: 142px;
+    min-width: 699px;
   }
 }
 

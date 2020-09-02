@@ -17,6 +17,7 @@
 .button:focus {
   background-color: $grey;
   color: $white;
+  outline: none;
 }
 
 .button:active {

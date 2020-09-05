@@ -21,4 +21,8 @@
   @media (min-width: $tablet-width) {
     margin-top: 51px;
   }
+
+  @media (min-width: $desktop-width) {
+    max-width: 318px;
+  }
 }

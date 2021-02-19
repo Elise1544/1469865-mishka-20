@@ -13,6 +13,7 @@ const imagemin = require("gulp-imagemin");
 const del = require("del");
 const uglify = require("gulp-uglify");
 const htmlmin = require("gulp-htmlmin");
+const ghPages = require("gulp-gh-pages");
 
 // Del
 
@@ -168,10 +169,3 @@ gulp.task('deploy', function() {
   return gulp.src('./build/**/*')
     .pipe(ghPages());
 });
-
-// const deploy = () => {
-//   return gulp.src('./build/**/*')
-//     .pipe(ghPages());
-// };
-
-// exports.deploy = deploy;

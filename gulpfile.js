@@ -164,9 +164,14 @@ exports.build = gulp.series(
   html
 );
 
-const deploy = () => {
+gulp.task('deploy', function() {
   return gulp.src('./build/**/*')
     .pipe(ghPages());
-};
+});
 
-exports.deploy = deploy;
+// const deploy = () => {
+//   return gulp.src('./build/**/*')
+//     .pipe(ghPages());
+// };
+
+// exports.deploy = deploy;

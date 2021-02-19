@@ -163,3 +163,10 @@ exports.build = gulp.series(
   sprite,
   html
 );
+
+const deploy = () => {
+  return gulp.src('./build/**/*')
+    .pipe(ghPages());
+};
+
+exports.deploy = deploy;

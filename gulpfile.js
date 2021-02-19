@@ -14,6 +14,7 @@ const del = require("del");
 const uglify = require("gulp-uglify");
 const htmlmin = require("gulp-htmlmin");
 const ghPages = require("gulp-gh-pages");
+const path = require("path");
 
 // Del
 
